@@ -1,0 +1,43 @@
+
+{
+    "departmentName": "研究三所",
+    "departmentTitle": "農業環境、農業經濟、農業政策與林業政策研究",
+    "departmentContent": "《研究三所》聚焦農業環境與政策研析與因應。服務涵蓋農業資源與環境調查、水土環境監測、評估分析、農業試驗等。以農業環境與農業政策為核心領域，協助政府農政部門於前述課題積極因應，提供政策法規制定或措施方案推動上之建議與相關議題上之解決方案。政策推動方向包含各項農林業環境政策、淨零議題研究、推動林業國產木竹材產品驗證，促進推動國際森林管理委員會驗證等。",
+    "researchAreasTitle": "研究領域",
+    "researchAreasContent": "農業灌溉水質管理、友善農業田間栽培試驗、國產木竹材驗證服務、農業碳匯機制研究、農業產業結構調整、林產業振興政策推動、產業人才培訓機制、訓練機構評鑑、國產芻料作物產業調查、農業綠能政策推動等研究。",
+    "researchAreaslist":[
+        "農業友善環境研究",
+        "林業永續發展研究",
+        "畜牧業產業發展研究"
+    ],
+
+    "images":[
+        "/src/assets/images/ResearchInstitute3/image1.jpg",
+        "/src/assets/images/ResearchInstitute3/image2.jpg",
+        "/src/assets/images/ResearchInstitute3/image3.jpg",
+        "/src/assets/images/ResearchInstitute3/image4.jpg",
+        "/src/assets/images/ResearchInstitute3/image5.jpg",
+        "/src/assets/images/ResearchInstitute3/image6.jpg",
+        "/src/assets/images/ResearchInstitute3/image7.jpg",
+        "/src/assets/images/ResearchInstitute3/image8.jpg",
+        "/src/assets/images/ResearchInstitute3/image9.jpg",
+        "/src/assets/images/ResearchInstitute3/image10.jpg",
+        "/src/assets/images/ResearchInstitute3/image11.jpg",
+        "/src/assets/images/ResearchInstitute3/image12.jpg",
+        "/src/assets/images/ResearchInstitute3/image13.jpg",
+        "/src/assets/images/ResearchInstitute3/image14.jpg",
+        "/src/assets/images/ResearchInstitute3/image15.jpg",
+        "/src/assets/images/ResearchInstitute3/image16.jpg",
+        "/src/assets/images/ResearchInstitute3/image17.jpg",
+        "/src/assets/images/ResearchInstitute3/image18.jpg",
+        "/src/assets/images/ResearchInstitute3/image19.jpg",
+        "/src/assets/images/ResearchInstitute3/image20.jpg",
+        "/src/assets/images/ResearchInstitute3/image21.jpg",
+        "/src/assets/images/ResearchInstitute3/image22.jpg",
+        "/src/assets/images/ResearchInstitute3/image23.jpg",
+        "/src/assets/images/ResearchInstitute3/image24.jpg",
+        "/src/assets/images/ResearchInstitute3/image25.jpg",
+        "/src/assets/images/ResearchInstitute3/image26.jpg"
+    ]
+  }
+  
