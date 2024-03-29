@@ -79,27 +79,19 @@
                     {{ error.$message }}
                 </div>
             </div>
+            <div class="form_group col-12 ">
+                <vue-recaptcha :sitekey="instance_vueRecaptchaV2.data_v2SiteKey" size="normal" theme="light" hl="zh-TW"
+                    @verify="instance_vueRecaptchaV2.recaptchaVerified"
+                    @expire="instance_vueRecaptchaV2.recaptchaExpired"
+                    @fail="instance_vueRecaptchaV2.recaptchaFailed" />
+            </div>
             <div class="form_group col-12 text-center">
                 <button :disabled="isValid" class="btn btn-primary" type="submit" @click="submitForm()">送出</button>
             </div>
         </form>
 
     </div>
-    <!-- test -->
-    <form action="" style="border: 1px saddlebrown solid ; margin: 20px auto;width: 50%;padding: 20px;">
-        <!-- reCAPTCHA v3 -->
-        <!-- <ChallengeV3 v-model="response" action="submit">
-            <PrimaryButton>{{ response ? `Get response: ${response.slice(0, 6)}...` : 'click me' }}</PrimaryButton>
-        </ChallengeV3> -->
-        <!-- reCAPTCHA v2 -->
-        <!-- <div>
-            <ThemeButton v-model="theme" @click="response = ''" />
-            <div>{{ response ? 'Verified' : 'Please click the checkbox' }}</div>
-            <Checkbox :key="theme" v-model="response" :theme="theme" />
-        </div> -->
-        <Checkbox />
 
-    </form>
 
 </template>
 
@@ -107,11 +99,30 @@
 import { useVuelidate } from '@vuelidate/core'
 import { required, email, minLength, maxLength, helpers } from '@vuelidate/validators'
 import { reactive, ref, computed, watch } from 'vue'
-
-const theme = ref<'light' | 'dark'>('light')
-const response = ref()
-
-
+import vueRecaptcha from 'vue3-recaptcha2';
+const response = ref('');
+const instance_vueRecaptchaV2 = reactive({
+    // 請換成你註冊的 SiteKey
+    // Please change to your SiteKey.
+    data_v2SiteKey: '6LfiNagpAAAAAHMu1v6CqjjOR9830A4YCZHpNT-p',
+    recaptchaVerified: (response_token: string) => {
+        console.log(response_token);
+        response.value = response_token;
+        // 連接後端API，給後端進行認證
+        // Connect to your Backend service.
+    },
+    recaptchaExpired: () => {
+        // 驗證過期後進行的動作
+        // After recaptcha is expired, the action you can do.
+        // console.log('驗證過期啦QAQ');
+        alert('驗證過期啦QAQ 請重新勾選"我不是機器人"');
+        response.value = '';
+    },
+    recaptchaFailed: () => {
+        // 驗證失敗進行的動作
+        // After recaptcha is failed, the action you can do.
+    },
+});
 
 const formData = reactive({
     name: '',
@@ -188,7 +199,12 @@ const submitForm = async () => {
         // const token = await execute('submit');
         // console.log(token.score);
         // console.log("表單驗證成功");
-        alert("表單驗證成功");
+        if (response.value.length > 0) {
+            alert("表單驗證成功");
+        } else {
+            alert("請勾選我不是機器人");
+        }
+
 
     } else {
         // console.log("表單驗證失敗");

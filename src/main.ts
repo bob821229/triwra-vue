@@ -38,10 +38,11 @@ const app = createApp(App)
 //       useRecaptchaNet: true,
 //     },
 //   });
-app.use(VueRecaptchaPlugin, {
-  v2SiteKey: '6LfiNagpAAAAAHMu1v6CqjjOR9830A4YCZHpNT-p',
-  v3SiteKey: '6LeSC6YpAAAAACs9UiTyYRTW-uaDXttA6UML6u-E',
-})
+
+// app.use(VueRecaptchaPlugin, {
+//   v2SiteKey: '6LfiNagpAAAAAHMu1v6CqjjOR9830A4YCZHpNT-p',
+//   v3SiteKey: '6LeSC6YpAAAAACs9UiTyYRTW-uaDXttA6UML6u-E',
+// })
 app.use(createPinia())
 app.use(router)
 
