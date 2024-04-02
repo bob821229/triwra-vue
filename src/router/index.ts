@@ -39,6 +39,9 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/ResearchResults.vue'),
+      meta: {
+        title: '研究成果' 
+      }
       
     },
     {
@@ -62,6 +65,42 @@ const router = createRouter({
       component: () => import('../views/ContactForm.vue'),
       meta: {
         title: '聯絡填寫單' 
+      }
+      
+    },
+    {
+      path: '/MeetingSpace',
+      name: 'MeetingSpace',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/MeetingSpace.vue'),
+      meta: {
+        title: '會議空間' 
+      }
+      
+    },
+    {
+      path: '/BusinessCategory',
+      name: 'BusinessCategory',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/BusinessCategory.vue'),
+      meta: {
+        title: '業務範疇' 
+      }
+      
+    },
+    {
+      path: '/TrafficInformationAndMaps',
+      name: 'TrafficInformationAndMaps',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/TrafficInformationAndMaps.vue'),
+      meta: {
+        title: '交通資訊與地圖' 
       }
       
     }

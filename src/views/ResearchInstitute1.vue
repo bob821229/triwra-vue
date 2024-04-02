@@ -51,7 +51,7 @@
             </div>
 
 
-            <button class="my-2" @click="refreshCarousel">refresh</button>
+            <!-- <button class="my-2" @click="refreshCarousel">refresh</button> -->
         </div>
 
 

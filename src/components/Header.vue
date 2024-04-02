@@ -33,16 +33,16 @@
 
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
                             <li>
-                                <RouterLink class="dropdown-item" to="/業務範疇">業務範疇</RouterLink>
+                                <RouterLink class="dropdown-item" to="/BusinessCategory">業務範疇</RouterLink>
                             </li>
                             <li>
                                 <RouterLink class="dropdown-item" to="/SupervisorProfile/主管簡介">主管簡介</RouterLink>
                             </li>
                             <li>
-                                <RouterLink class="dropdown-item" to="/會議空間">會議空間</RouterLink>
+                                <RouterLink class="dropdown-item" to="/MeetingSpace">會議空間</RouterLink>
                             </li>
                             <li>
-                                <RouterLink class="dropdown-item" to="/交通資訊">交通資訊</RouterLink>
+                                <RouterLink class="dropdown-item" to="/TrafficInformationAndMaps">交通資訊</RouterLink>
                             </li>
                             <li>
                                 <RouterLink class="dropdown-item" to="/影音專區">影音專區</RouterLink>

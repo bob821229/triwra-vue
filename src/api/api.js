@@ -20,3 +20,7 @@ export const getResearchInstitute = (x) => {
 export const getResearchResults = () => {
  return triwraRequest.get(`/ResearchResults/ResearchResults.json`);
 }
+// 會議空間
+export const getMeetingSpace = () => {
+ return triwraRequest.get(`/MeetingSpace/MeetingSpace.json`);
+}
