@@ -261,6 +261,7 @@
 
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+import ScrollToTopBtn from '../components/ScrollToTopBtn.vue'
 
 // import function to register Swiper custom elements
 import { register } from 'swiper/element/bundle';

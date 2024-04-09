@@ -11,22 +11,22 @@
                 <span @click="expandFooter">{{ footerControlText }}</span>
                 <div class="footer_content">
                     <div class="left_block" :class="{ 'display_none': isExpandFooter }">
-                        <a href="">-關於本院-</a>
+                        <RouterLink to="/">-關於本院-</RouterLink>
                         <ul>
                             <li>
-                                <RouterLink class="dropdown-item" to="/業務範疇">業務範疇</RouterLink>
+                                <RouterLink class="dropdown-item" to="/BusinessCategory">業務範疇</RouterLink>
                             </li>
                             <li>
-                                <RouterLink class="dropdown-item" to="/SupervisorProfile">主管簡介</RouterLink>
+                                <RouterLink class="dropdown-item" to="/SupervisorProfile/主管簡介">主管簡介</RouterLink>
                             </li>
                             <li>
-                                <RouterLink class="dropdown-item" to="/會議空間">會議空間</RouterLink>
+                                <RouterLink class="dropdown-item" to="/MeetingSpace">會議空間</RouterLink>
                             </li>
                             <li>
-                                <RouterLink class="dropdown-item" to="/交通資訊">交通資訊</RouterLink>
+                                <RouterLink class="dropdown-item" to="/TrafficInformationAndMaps">交通資訊</RouterLink>
                             </li>
                             <li>
-                                <RouterLink class="dropdown-item" to="/影音專區">影音專區</RouterLink>
+                                <RouterLink class="dropdown-item" to="/AudioAndVideoArea">影音專區</RouterLink>
                             </li>
                         </ul>
                     </div>
@@ -34,22 +34,28 @@
                         <a href="">-部門介紹-</a>
                         <ul>
                             <li>
-                                <RouterLink class="dropdown-item" to="/研究一所">研究一所</RouterLink>
+                                <RouterLink class="dropdown-item" to="/ResearchInstitute1/研究一所/ResearchInstitute1">研究一所
+                                </RouterLink>
                             </li>
                             <li>
-                                <RouterLink class="dropdown-item" to="/研究二所">研究二所</RouterLink>
+                                <RouterLink class="dropdown-item" to="/ResearchInstitute1/研究二所/ResearchInstitute2">研究二所
+                                </RouterLink>
                             </li>
                             <li>
-                                <RouterLink class="dropdown-item" to="/研究三所">研究三所</RouterLink>
+                                <RouterLink class="dropdown-item" to="/ResearchInstitute1/研究三所/ResearchInstitute3">研究三所
+                                </RouterLink>
                             </li>
                             <li>
-                                <RouterLink class="dropdown-item" to="/研究四所">研究四所</RouterLink>
+                                <RouterLink class="dropdown-item" to="/ResearchInstitute1/研究四所/ResearchInstitute4">研究四所
+                                </RouterLink>
                             </li>
                             <li>
-                                <RouterLink class="dropdown-item" to="/教育推廣處">教育推廣處</RouterLink>
+                                <RouterLink class="dropdown-item"
+                                    to="/ResearchInstitute1/教育推廣處/EducationPromotionOffice">教育推廣處</RouterLink>
                             </li>
                             <li>
-                                <RouterLink class="dropdown-item" to="/國際合作處">國際合作處</RouterLink>
+                                <RouterLink class="dropdown-item"
+                                    to="/ResearchInstitute1/國際合作處/InternationalCooperationOffice">國際合作處</RouterLink>
                             </li>
                         </ul>
                     </div>

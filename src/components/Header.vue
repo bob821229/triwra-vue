@@ -89,17 +89,20 @@
                         <!-- <a class="nav-link active" aria-current="page" href="#">研究成果</a> -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"
-                            href="https://www.104.com.tw/company/1a2x6bju9s">人才招募</a>
+                        <a class="nav-link active" aria-current="page" href="https://www.104.com.tw/company/1a2x6bju9s"
+                            target="_blank">人才招募</a>
                     </li>
                     <li class="nav-item">
                         <RouterLink class="nav-link active" aria-current="page" to="/ContactUs">聯絡我們
                         </RouterLink>
                     </li>
+
                     <li class="nav-item ms-2">
-                        <div>
-                            <img src="../assets/images/Facebook.png" alt="" width="40" height="40">
-                        </div>
+                        <a href="https://www.facebook.com/groups/1069174471128508">
+                            <div>
+                                <img src="../assets/images/Facebook.png" alt="" width="40" height="40">
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
