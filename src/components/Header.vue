@@ -45,7 +45,7 @@
                                 <RouterLink class="dropdown-item" to="/TrafficInformationAndMaps">交通資訊</RouterLink>
                             </li>
                             <li>
-                                <RouterLink class="dropdown-item" to="/影音專區">影音專區</RouterLink>
+                                <RouterLink class="dropdown-item" to="/AudioAndVideoArea">影音專區</RouterLink>
                             </li>
                         </ul>
                     </li>
@@ -89,7 +89,8 @@
                         <!-- <a class="nav-link active" aria-current="page" href="#">研究成果</a> -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">人才招募</a>
+                        <a class="nav-link active" aria-current="page"
+                            href="https://www.104.com.tw/company/1a2x6bju9s">人才招募</a>
                     </li>
                     <li class="nav-item">
                         <RouterLink class="nav-link active" aria-current="page" to="/ContactUs">聯絡我們
@@ -116,6 +117,9 @@ import { RouterLink, RouterView } from 'vue-router'
 .navbar {
     height: 80px;
     padding: 15px;
+    background-color: #FFF;
+    position: relative;
+
 }
 
 .nav-item:hover .dropdown-menu {
@@ -146,7 +150,8 @@ import { RouterLink, RouterView } from 'vue-router'
 
 }
 
-.navbar {
-    background-color: #FFF;
+.collapse {
+    z-index: 50;
+    width: 100%;
 }
 </style>

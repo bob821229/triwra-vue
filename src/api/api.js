@@ -24,3 +24,7 @@ export const getResearchResults = () => {
 export const getMeetingSpace = () => {
  return triwraRequest.get(`/MeetingSpace/MeetingSpace.json`);
 }
+// 交通資訊與地圖
+export const getTrafficInformationAndMaps = () => {
+ return triwraRequest.get(`/TrafficInformationAndMaps/TrafficInformationAndMaps.json`);
+}

@@ -1,8 +1,8 @@
 <template>
 
     <div class="content card_wrap">
-        <div class="row">
-            <div class="col-6 left_block">
+        <div class="row flex-column-reverse flex-md-row">
+            <div class="col-md-6 col-sm-12 left_block">
 
 
 
@@ -26,7 +26,7 @@
                     <slot name="experience">(放入經歷)</slot>
                 </ol>
             </div>
-            <div class="col-6 right_block">
+            <div class="col-md-6 col-sm-12 right_block">
                 <slot name="img">(放入照片)</slot>
 
             </div>

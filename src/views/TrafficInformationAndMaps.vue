@@ -25,38 +25,33 @@
         </div>
 
         <h1>周遭景點</h1>
+        <!-- <img src="/src/assets/images/TrafficInformationAndMaps/附近1.jpg" alt=""> -->
         <div class="owl-carousel owl-theme owl-loaded">
             <div class="owl-stage-outer">
                 <div class="owl-stage">
-                    <div class="owl-item">
-                        1
+                    <div class="card owl-item" v-for="item in data " :key="item.attractions">
+                        <img :src="item.pic" class="card-img-top" :alt="item.attractions">
+
+                        <div class="card-body">
+                            <p class="card-text text-center">{{ item.attractions }}</p>
+                        </div>
                     </div>
-                    <div class="owl-item">
-                        2
-                    </div>
-                    <div class="owl-item">
-                        3
-                    </div>
-                    <div class="owl-item">
-                        4
-                    </div>
-                    <div class="owl-item">
-                        5
-                    </div>
+
 
                 </div>
             </div>
-            <p>多个复选框：</p>
-            <input type="checkbox" id="runoob" value="Runoob" v-model="checkedNames">
-            <label for="runoob">Runoob</label>
-            <input type="checkbox" id="google" value="Google" v-model="checkedNames">
-            <label for="google">Google</label>
-            <input type="checkbox" id="taobao" value="Taobao" v-model="checkedNames">
-            <label for="taobao">taobao</label>
-            <br>
-            <span>选择的值为: {{ checkedNames }}</span>
+        </div>
 
-            <!-- <button class="my-2" @click="refreshCarousel">refresh</button> -->
+        <div class="content">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 around">
+                    <img src="../assets/images/TrafficInformationAndMaps/周遭.jpg" class="img-fluid " alt="...">
+                </div>
+                <div class="col-md-6 col-sm-12 around">
+                    <img src="../assets/images/TrafficInformationAndMaps/周遭2.jpg" class="img-fluid " alt="...">
+
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -65,12 +60,24 @@
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
 import { onMounted, ref } from 'vue';
-const checkedNames = ref([])
-onMounted(async () => {
+import { getTrafficInformationAndMaps } from '@/api/api'
 
+onMounted(async () => {
+    await fetchData()
     initCarousel()
 
 })
+const data = ref([])
+async function fetchData() {
+    try {
+        const response = await getTrafficInformationAndMaps()
+        data.value = response.data
+
+    } catch (error) {
+        console.log(error)
+    }
+}
+getTrafficInformationAndMaps()
 function initCarousel() {
     // 初始化輪播組件時，應該確保當輪播組件被渲染到 DOM 中時再進行初始化，否則可能會造成初始化失敗
     if (document.querySelector('.owl-carousel')) {
@@ -145,5 +152,68 @@ function initCarousel() {
         }
     }
 
+}
+
+
+:deep(.owl-nav) {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 110%;
+    left: -5%;
+
+    span {
+        font-size: 50px;
+        color: #fff;
+        color: #000;
+    }
+}
+
+:deep(.owl-dots) {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+
+    .owl-dot {
+        display: inline-block;
+        margin: 0 5px;
+
+        span {
+            width: 50px;
+            height: 50px;
+            font-size: 50px;
+        }
+    }
+}
+
+.card {
+    border: none;
+    border-radius: 0;
+
+    img {
+        aspect-ratio: 535/362;
+        object-fit: cover;
+    }
+}
+
+.card-text {
+    font-size: 30px;
+}
+
+.around {
+    position: relative;
+
+    transition: transform 0.5s ease;
+
+    img {
+        border-radius: 25px;
+        box-shadow: #54595f 2px 3px 10px;
+    }
+
+    &:hover {
+        transform: translateY(-8px);
+    }
 }
 </style>
