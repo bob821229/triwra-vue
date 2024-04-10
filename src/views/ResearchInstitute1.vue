@@ -187,7 +187,7 @@ h1 {
     }
 }
 
-::v-deep .owl-nav {
+:deep(.owl-nav) {
     position: absolute;
     top: 45%;
     transform: translateY(-50%);
@@ -205,7 +205,7 @@ h1 {
 
 }
 
-::v-deep .owl-dots {
+:deep(.owl-dots) {
     width: 100%;
     height: 50px;
     text-align: center;
