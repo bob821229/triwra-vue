@@ -39,13 +39,13 @@
         </template>
 
         <template #educationalQualifications>
-          <li v-for="school in obj.educationalQualifications">
+          <li v-for="(school, index) in obj.educationalQualifications" :key="index">
             <p>{{ school }}</p>
           </li>
         </template>
 
         <template #experience>
-          <li v-for="exp in obj.experience">
+          <li v-for="(exp, idx) in obj.experience" :key="idx">
             <p>{{ exp }}</p>
           </li>
         </template>
@@ -62,9 +62,19 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import { getSupervisorProfile } from '../api/api'
+import { getSupervisorProfile } from '../api/api.js'
 import ManagerCard from '../components/ManagerCard.vue'
-const data = ref([])
+interface SupervisorProfile {
+  name: string;
+  position: string;
+  professionalField: string;
+  school: string;
+  educationalQualifications: string[];
+  experience: string[];
+  // Add other properties as needed
+}
+
+const data = ref<SupervisorProfile[]>([])
 onMounted(async () => {
   const response = await getSupervisorProfile()
   data.value = response.data

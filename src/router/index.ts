@@ -13,7 +13,7 @@ const router = createRouter({
       }
     },
     {
-      path: '/SupervisorProfile/:title',
+      path: '/SupervisorProfile/',
       name: 'SupervisorProfile',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
@@ -123,7 +123,9 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   // 在每次路由跳转前执行
   window.scrollTo(0, 0); // 滚动到页面顶部
-  document.title = to.params.title || to.meta.title
+  // document.title = to.params.title || to.meta.title
+  document.title = typeof to.params.title === 'string' ? to.params.title : (typeof to.meta.title === 'string' ? to.meta.title : '');
+  
   next(); // 继续路由跳转
 });
 

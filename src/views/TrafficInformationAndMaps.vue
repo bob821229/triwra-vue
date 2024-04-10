@@ -20,7 +20,7 @@
         <div class="map_wrap">
             <iframe class="map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.443783404864!2d121.45644621124131!3d25.154488977645535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442af92d6eaad3d%3A0x7d107b44577b7fcd!2z5Y-w54Gj5rC06LOH5rqQ6IiH6L6y5qWt56CU56m26Zmi!5e0!3m2!1szh-TW!2stw!4v1711961985440!5m2!1szh-TW!2stw"
-                width="1100" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                width="1100" height="450" style="border:0;" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
@@ -67,7 +67,12 @@ onMounted(async () => {
     initCarousel()
 
 })
-const data = ref([])
+interface AttractionItem {
+    attractions: string;
+    pic: string;
+}
+
+const data = ref<AttractionItem[]>([]);
 async function fetchData() {
     try {
         const response = await getTrafficInformationAndMaps()

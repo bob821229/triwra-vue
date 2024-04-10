@@ -17,7 +17,7 @@
                                 <RouterLink class="dropdown-item" to="/BusinessCategory">業務範疇</RouterLink>
                             </li>
                             <li>
-                                <RouterLink class="dropdown-item" to="/SupervisorProfile/主管簡介">主管簡介</RouterLink>
+                                <RouterLink class="dropdown-item" to="/SupervisorProfile">主管簡介</RouterLink>
                             </li>
                             <li>
                                 <RouterLink class="dropdown-item" to="/MeetingSpace">會議空間</RouterLink>

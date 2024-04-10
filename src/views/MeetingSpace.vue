@@ -19,7 +19,11 @@
 <script setup lang="ts">
 import { getMeetingSpace } from '../api/api.js'
 import { ref, onMounted } from 'vue'
-const data = ref([])
+interface MeetingSpaceItem {
+    name: string;
+    img: string;
+}
+const data = ref<MeetingSpaceItem[]>([]);
 
 onMounted(() => {
     getData()

@@ -83,7 +83,7 @@ watchEffect(async () => {
 
 async function fetchData() {
     try {
-        const response = await getResearchInstitute(route.params.id)
+        const response = await getResearchInstitute(route.params.id as string)
         data.value = response.data
 
     } catch (error) {

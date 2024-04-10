@@ -7,5 +7,9 @@
     {
       "path": "./tsconfig.app.json"
     }
-  ]
+  ],
+  "include": [
+    "global.d.ts", // 添加這行
+    "vue3-recaptcha2.d.ts"
+ ]
 }
