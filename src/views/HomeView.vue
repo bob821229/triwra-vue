@@ -448,12 +448,10 @@ const endVal = ref(2017);
     .banner_wrap {
 
       .text_wrap {
-
         font-size: 1rem;
         width: 70%;
 
         .year {
-
           font-size: 1.75rem;
         }
 
