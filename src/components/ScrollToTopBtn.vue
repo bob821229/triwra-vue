@@ -1,5 +1,6 @@
 <template>
-    <button type="button" class="btn btn-outline-warning rounded-pill scroll-to-top "
+    <button v-if="showScrollButton" type="button"
+        class="btn btn-outline-warning rounded-pill scroll-to-top d-md-block d-none"
         :class="{ 'd-none': showScrollButton }" @click="scrollToTop"><i class="bi bi-arrow-up-short"></i>頂部</button>
 </template>
 
@@ -19,9 +20,9 @@ onBeforeUnmount(() => {
 // 是否顯示至頂按鈕
 function handleScroll() {
     if (window.scrollY > 200) {
-        showScrollButton.value = false;
-    } else {
         showScrollButton.value = true;
+    } else {
+        showScrollButton.value = false;
     }
 }
 // 回到頂部

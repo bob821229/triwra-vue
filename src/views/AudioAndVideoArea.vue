@@ -119,7 +119,7 @@
         margin: 50px 0;
         text-align: center;
         color: #A47332;
-        font-size: 35px;
+        font-size: 2.2rem;
         font-weight: 500;
         text-decoration: underline;
     }
@@ -131,7 +131,7 @@
 
         a {
             text-align: center;
-            font-size: 21px;
+            font-size: 1.3rem;
             font-weight: 600;
             color: #54595f;
             text-decoration: none;

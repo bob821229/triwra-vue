@@ -278,7 +278,7 @@ const endVal = ref(2017);
   padding: 10px;
   max-width: 1100px;
   margin: 50px auto;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 700;
   color: #54595f;
 
@@ -287,7 +287,7 @@ const endVal = ref(2017);
     margin: 50px 0;
     text-align: center;
     color: #A47332;
-    font-size: 35px;
+    font-size: 2.2rem;
     font-weight: 500;
     text-decoration: underline;
   }
@@ -319,18 +319,20 @@ const endVal = ref(2017);
     padding: 0;
 
     .card-title {
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 600;
       padding-bottom: 0;
       margin-bottom: 0;
     }
 
     .card-text {
-      font-size: 15px;
+      font-size: 0.9rem;
       font-weight: 500;
     }
   }
 }
+
+
 
 .mySwiper {
   width: 100%;
@@ -340,7 +342,6 @@ const endVal = ref(2017);
     width: 100%;
     max-height: 714px;
     overflow: hidden;
-    /* 避免图片溢出容器 */
     position: relative;
 
     .text_wrap {
@@ -350,15 +351,17 @@ const endVal = ref(2017);
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 50%;
+      // width: 50%;
+      width: 60%;
       z-index: 10;
       color: #fff;
-      font-size: 40px;
+      font-size: 2.5rem;
+      line-height: 1;
       font-weight: 600;
       text-shadow: 5px 5px 10px rgb(0, 0, 0);
 
       .year {
-        font-size: 60px;
+        font-size: 3.75rem;
       }
 
       span {
@@ -382,7 +385,7 @@ const endVal = ref(2017);
   color: #fff;
   border: 3px solid #fff;
   padding: 5px 20px;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   cursor: pointer;
   background-color: #0000;
@@ -420,7 +423,7 @@ const endVal = ref(2017);
 
     a {
       text-align: center;
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: 600;
       color: #54595f;
       text-decoration: none;
@@ -437,5 +440,30 @@ const endVal = ref(2017);
 .platform {
   text-align: center;
   max-height: 107px;
+}
+
+@media screen and (max-width:768px) {
+  .mySwiper {
+
+    .banner_wrap {
+
+      .text_wrap {
+
+        font-size: 1rem;
+        width: 70%;
+
+        .year {
+
+          font-size: 1.75rem;
+        }
+
+
+      }
+    }
+
+
+
+
+  }
 }
 </style>

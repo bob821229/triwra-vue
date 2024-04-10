@@ -119,9 +119,9 @@ import { RouterLink, RouterView } from 'vue-router'
 <style scoped lang="scss">
 .navbar {
     height: 80px;
-    padding: 15px;
+    // padding: 15px;
     background-color: #FFF;
-    position: relative;
+    // position: relative;
 
 }
 
@@ -140,12 +140,9 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 
 .navbar-nav {
-
     background-color: #FFF;
 
-    li {
-        // background-color: #fff;
-    }
+
 }
 
 .container-fluid {

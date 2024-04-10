@@ -34,7 +34,7 @@
         margin: 50px 0;
         text-align: center;
         color: #A47332;
-        font-size: 35px;
+        font-size: 2.2rem;
         font-weight: 500;
         text-decoration: underline;
     }
@@ -42,7 +42,7 @@
 
 
     .content_text {
-        font-size: 22px;
+        font-size: 1.375rem;
         font-weight: 500;
         color: #54595f;
         line-height: 41px;
@@ -65,7 +65,7 @@
 
 
     li {
-        font-size: 22px;
+        font-size: 1.375rem;
         font-weight: 500;
         color: #54595f;
     }
