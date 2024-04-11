@@ -1,0 +1,25 @@
+
+{
+    "departmentName": "教育推廣處",
+    "departmentTitle": "農田水利業務人員教育訓練與政策推廣",
+    "departmentContent": "《教育推廣處》著重政府機關政策之宣推及相關教育訓練課程規劃與辦理，並提供民力組織維運、會議舉辦、刊物出版、多元媒體行銷等服務。致力發展農田水利教育訓練，除了一般虛實整合式之農田水利教育訓練，亦致力於運用民間人力資源協助政府施政，藉由農田水利文化推廣、出版品知識行銷、跨國性合作等多方位面向，傳遞農田水利新知及促進人才交流，發展農田水利專業人員培訓。",
+    "researchAreasTitle": "研究領域",
+    "researchAreasContent": "農田水利業務人員專業教育訓練課程、政策宣導推廣、刊物製作出版、數位媒體行銷、志工管理培訓、開發加值應用教材等研究。",
+    "researchAreaslist":[
+        "農田水利教育訓練",
+        "水資源與農業會議與活動",
+        "志工管理培訓",
+        "食農教育推廣"
+    ],
+
+    "images":[
+        "/images/EducationPromotionOffice/image1.jpg",
+        "/images/EducationPromotionOffice/image2.jpg",
+        "/images/EducationPromotionOffice/image3.jpg",
+        "/images/EducationPromotionOffice/image4.jpg",
+        "/images/EducationPromotionOffice/image5.jpg",
+        "/images/EducationPromotionOffice/image6.jpg",
+        "/images/EducationPromotionOffice/image7.jpg"
+    ]
+  }
+  

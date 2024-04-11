@@ -1,0 +1,26 @@
+[
+    {
+        "name":"20樓之5 - 訓練教室",
+        "img":"/src/assets/images/MeetingSpace/20-5.jpg"
+    },
+    {
+        "name":"20樓之7 - 會議室",
+        "img":"/src/assets/images/MeetingSpace/20-7.jpg"
+    },
+    {
+        "name":"20樓之3 - VR電腦教室",
+        "img":"/src/assets/images/MeetingSpace/20-3.jpg"
+    },
+    {
+        "name":"20樓之3 - 電腦教室",
+        "img":"/src/assets/images/MeetingSpace/20-3-1.jpg"
+    },
+    {
+        "name":"19樓之2 - 會議室",
+        "img":"/src/assets/images/MeetingSpace/19-2.jpg"
+    },
+    {
+        "name":"19樓之10 - 會議室",
+        "img":"/src/assets/images/MeetingSpace/19-10.jpg"
+    }
+]

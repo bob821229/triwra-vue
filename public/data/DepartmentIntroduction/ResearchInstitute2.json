@@ -1,0 +1,29 @@
+
+{
+    "departmentName": "研究二所",
+    "departmentTitle": "農田水利事業組織、公共政策與行政法制研究",
+    "departmentContent": "《研究二所》側重公共行政、公共管理、法律及政策規劃等領域。業務範疇涉及政策方案規劃、法規草案修正與研析及公部門組織設計等項目。結合公共行政、公共管理、法律及政策規劃等核心領域之人力資源，服務範疇包含協助政府施政之整合法規設計與政策方案研析等實務工作，並涉及政策方案規劃、法規草案修正與研析及公部門組織設計等項目。近年研究實績包括農田水利法及其配套子法規研析、農田水利事業效益與公部門組織及人力資源規劃等。<br>《法制服務團》致力於各種法律問題研析，除一般民事、刑事問題外，亦熟稔農田水利法、水利法、訴願法、行政訴訟法、國家賠償法、行政罰法、行政執行法、財團法人法、個人資料保護法、政府資訊公開法、第三類健保等法律議題並研提法制意見，且運用法制座談會、研討會等方式與專家學者共同研商法律意見。此外，《法制服務團》亦擅於法制教育訓練課程規劃，過去曾辦理農田水利財團法人個人資料保護法教育訓練、農田水利事業人員法制教育訓練、農田水利法稽查證核發講習、，並編撰案例教材或作業手冊等。",
+    "researchAreasTitle": "研究領域",
+    "researchAreasContent": "農田水利事業人員人事資料管理系統功能開發與維運、組織人力專業發展及人事制度精進、法制教育及法規精進、作業基金業務精進、農田水利非事業用不動產活化、農田水利設施管理業務精進、法制服務團、全國執行機關與清潔隊人員效益提升等研究。<br>法制服務團研究領域涉及：獎勵輔導造林及樹木保護政策法制業務推動與精進評估、農業部農田水利署管理處員工知能提升、農田水利法制教育及法律事務精進、農田水利設施範圍照舊使用及管理業務精進等研究範疇。",
+    "researchAreaslist":[
+        "農田水利事業制度研究",
+        "農田水利組織研究",
+        "公共政策及行政法制研究",
+        "法制業務推動",
+        "法制教育及法律事務",
+        "農田水利設施範圍照舊使用"
+    ],
+
+    "images":[
+        "/src/assets/images/ResearchInstitute2/image1.jpg",
+        "/src/assets/images/ResearchInstitute2/image2.jpg",
+        "/src/assets/images/ResearchInstitute2/image3.jpg",
+        "/src/assets/images/ResearchInstitute2/image4.jpg",
+        "/src/assets/images/ResearchInstitute2/image5.jpg",
+        "/src/assets/images/ResearchInstitute2/image6.jpg",
+        "/src/assets/images/ResearchInstitute2/image7.jpg",
+        "/src/assets/images/ResearchInstitute2/image8.jpg",
+        "/src/assets/images/ResearchInstitute2/image9.jpg"
+    ]
+  }
+  
