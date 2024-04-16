@@ -50,10 +50,6 @@ const options = ref(
         search: true,
         searchAlign: 'right', // 將搜尋框對齊到右側
         pagination: true,
-        // formatPaginationDetail: function (pageNumber, pageSize, totalRows) {
-        //     // 自定义分页详细信息文本
-        //     return `显示 ${pageNumber * pageSize - pageSize + 1} 到 ${Math.min(pageNumber * pageSize, totalRows)} 的 ${totalRows} 行`;
-        // },
         paginationHAlign: 'right', // 控制分頁按鈕的水平對齊方式
         paginationDetailHAlign: 'left', // 控制分頁詳細信息的水平對齊方式
         pageSize: 10, // 每頁顯示的行數
