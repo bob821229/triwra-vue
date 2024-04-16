@@ -11,7 +11,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 import { getResearchResults } from '../api/api'
-
+import 'bootstrap-table/dist/locale/bootstrap-table-zh-TW.min.js';
 
 const options = ref(
     {
@@ -45,7 +45,7 @@ const options = ref(
             }
         ],
         data: [],
-        // locale: 'zh-TW',語言中文
+        locale: 'zh-TW',//語言中文
         sortable: true,
         search: true,
         searchAlign: 'right', // 將搜尋框對齊到右側
@@ -57,9 +57,9 @@ const options = ref(
         paginationHAlign: 'right', // 控制分頁按鈕的水平對齊方式
         paginationDetailHAlign: 'left', // 控制分頁詳細信息的水平對齊方式
         pageSize: 10, // 每頁顯示的行數
-        paginationNextText: '下一頁',
-        paginationPreText: '上一頁',
-        paginationParts: ['pageInfo', 'pageList'],
+        paginationParts: ['pageInfo', 'pageList'],//預設: ['pageInfo', 'pageSize', 'pageList']
+        // paginationNextText: '下一頁',
+        // paginationPreText: '上一頁',
         //自定義分頁字串顯示為中文
         formatShowingRows: function (pageFrom, pageTo, totalRows) {
             return "目前顯示 第" + pageFrom + " 至 第" + pageTo + "個資料列，總計" + totalRows + "個資料列";
@@ -68,10 +68,10 @@ const options = ref(
         formatRecordsPerPage: function (pageNumber) {
             return '每頁顯示' + pageNumber + '個資料列';
         },
-        // 自定義搜尋框placeholder
-        formatSearch() {
-            return '搜尋'
-        }
+        // // 自定義搜尋框placeholder
+        // formatSearch() {
+        //     return '搜尋'
+        // }
     })
 async function getData() {
     try {
