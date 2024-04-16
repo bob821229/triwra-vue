@@ -8,8 +8,12 @@
       "path": "./tsconfig.app.json"
     }
   ],
+  "compilerOptions": {
+    // 其他编译器选项
+    "typeRoots": ["./node_modules/@types", "./types"]
+ },
   "include": [
     "global.d.ts", // 添加這行
     "vue3-recaptcha2.d.ts"
- ]
+ ],
 }

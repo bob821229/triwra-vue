@@ -57,11 +57,11 @@ const options = ref(
         // paginationNextText: '下一頁',
         // paginationPreText: '上一頁',
         //自定義分頁字串顯示為中文
-        formatShowingRows: function (pageFrom, pageTo, totalRows) {
+        formatShowingRows: function (pageFrom: number, pageTo: number, totalRows: number) {
             return "目前顯示 第" + pageFrom + " 至 第" + pageTo + "個資料列，總計" + totalRows + "個資料列";
         },
         //自定義分頁字串顯示為中文
-        formatRecordsPerPage: function (pageNumber) {
+        formatRecordsPerPage: function (pageNumber: number) {
             return '每頁顯示' + pageNumber + '個資料列';
         },
         // // 自定義搜尋框placeholder
@@ -80,7 +80,7 @@ async function getData() {
 
 onMounted(async () => {
     await getData();
-    $('#myTable').bootstrapTable(options.value);
+    $('#myTable' as any).bootstrapTable(options.value as any);
 });
 </script>
 
