@@ -1,8 +1,13 @@
 
 import axios from 'axios';
 
-const baseURL= import.meta.env.VITE_BASE_URL
-
+// const baseURL= import.meta.env.VITE_BASE_URL
+let baseURL=''
+if(import.meta.env.PROD){
+  baseURL='/triwra-vue/data'
+}else{
+  baseURL='/data'
+}
 const triwraRequest = axios.create({
   baseURL:baseURL
 });
