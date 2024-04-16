@@ -4,7 +4,7 @@ import axios from 'axios';
 
 
 const triwraRequest = axios.create({
-  baseURL:'/public/data'
+  baseURL:'/data'
 });
 
 

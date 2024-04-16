@@ -51,7 +51,7 @@
         </template>
 
         <template #img>
-          <img :src="`/src/assets/images/SupervisorProfile/${obj.name}.jpg`" class="img-fluid" alt="...">
+          <img :src="`/images/SupervisorProfile/${obj.name}.jpg`" class="img-fluid" alt="...">
         </template>
       </ManagerCard>
     </div>

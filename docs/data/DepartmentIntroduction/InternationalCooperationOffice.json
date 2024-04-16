@@ -13,11 +13,11 @@
     ],
 
     "images":[
-        "/src/assets/images/InternationalCooperationOffice/image1.jpg",
-        "/src/assets/images/InternationalCooperationOffice/image2.jpg",
-        "/src/assets/images/InternationalCooperationOffice/image3.jpg",
-        "/src/assets/images/InternationalCooperationOffice/image4.jpg",
-        "/src/assets/images/InternationalCooperationOffice/image5.jpg"
+        "/images/InternationalCooperationOffice/image1.jpg",
+        "/images/InternationalCooperationOffice/image2.jpg",
+        "/images/InternationalCooperationOffice/image3.jpg",
+        "/images/InternationalCooperationOffice/image4.jpg",
+        "/images/InternationalCooperationOffice/image5.jpg"
     ]
   }
   
