@@ -6,7 +6,7 @@ let baseURL=''
 if(import.meta.env.PROD){
   baseURL='/triwra-vue/data'
 }else{
-  baseURL='/data'
+  baseURL='/src/data'
 }
 const triwraRequest = axios.create({
   baseURL:baseURL
