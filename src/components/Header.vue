@@ -12,7 +12,10 @@
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
             <RouterLink class="navbar-brand" to="/">
-                <img src="../assets/images/logoCNEN_site_color.svg" alt="" width="319.5" height="49">
+                <div class="img_wrapper">
+                    <img src="../assets/images/logoCNEN_site_color.svg" class="img-fluid" alt="...">
+                </div>
+                <!-- <img src="../assets/images/logoCNEN_site_color.svg" alt="" width="319.5" height="49"> -->
             </RouterLink>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -153,5 +156,16 @@ import { RouterLink, RouterView } from 'vue-router'
 .collapse {
     z-index: 50;
     width: 100%;
+}
+
+.img_wrapper {
+    max-width: 400px;
+    aspect-ratio: 320/50;
+}
+
+@media screen and (max-width:768px) {
+    .img_wrapper {
+        max-width: 300px;
+    }
 }
 </style>

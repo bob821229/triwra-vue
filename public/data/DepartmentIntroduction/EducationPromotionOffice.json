@@ -13,13 +13,13 @@
     ],
 
     "images":[
-        "/images/EducationPromotionOffice/image1.jpg",
-        "/images/EducationPromotionOffice/image2.jpg",
-        "/images/EducationPromotionOffice/image3.jpg",
-        "/images/EducationPromotionOffice/image4.jpg",
-        "/images/EducationPromotionOffice/image5.jpg",
-        "/images/EducationPromotionOffice/image6.jpg",
-        "/images/EducationPromotionOffice/image7.jpg"
+        "/src/assets/images/EducationPromotionOffice/image1.jpg",
+        "/src/assets/images/EducationPromotionOffice/image2.jpg",
+        "/src/assets/images/EducationPromotionOffice/image3.jpg",
+        "/src/assets/images/EducationPromotionOffice/image4.jpg",
+        "/src/assets/images/EducationPromotionOffice/image5.jpg",
+        "/src/assets/images/EducationPromotionOffice/image6.jpg",
+        "/src/assets/images/EducationPromotionOffice/image7.jpg"
     ]
   }
   
