@@ -1,4 +1,4 @@
-import{b as Si}from"./api-CTSamJ6T.js";import{m as Oi,n as St,e as ji,f as Pi,g as Ti,o as Ei,c as _i,a as Ot}from"./index-Doq2pYPj.js";/**
+import{b as Si}from"./api-CTSamJ6T.js";import{n as Oi,q as St,e as ji,f as Pi,g as Ti,o as Ei,c as _i,a as Ot}from"./index-CwXmiLXs.js";/**
   * bootstrap-table - An extended table to integration with some of the most widely used CSS frameworks. (Supports Bootstrap, Semantic UI, Bulma, Material Design, Foundation)
   *
   * @version v1.22.4

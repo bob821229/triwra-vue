@@ -4,6 +4,7 @@ import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 // import { useRecaptchaProvider } from 'vue-recaptcha'
 // useRecaptchaProvider()
+console.log(import.meta.env.VITE_BASE_URL)
 </script>
 
 <template>

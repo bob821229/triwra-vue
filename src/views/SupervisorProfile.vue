@@ -51,7 +51,7 @@
         </template>
 
         <template #img>
-          <img :src="`/images/SupervisorProfile/${obj.name}.jpg`" class="img-fluid" alt="...">
+          <img :src="`${url}/SupervisorProfile/${obj.name}.jpg`" class="img-fluid" alt="...">
         </template>
       </ManagerCard>
     </div>
@@ -80,6 +80,8 @@ onMounted(async () => {
   data.value = response.data
   console.log(data.value)
 })
+const url = import.meta.env.VITE_BASE_IMAGE_URL
+console.log(url)
 </script>
 
 <style scoped lang="scss">
