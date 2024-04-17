@@ -9,6 +9,7 @@
     </header> -->
 
     <!-- test -->
+
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
             <RouterLink class="navbar-brand" to="/">
@@ -165,7 +166,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 @media screen and (max-width:768px) {
     .img_wrapper {
-        max-width: 300px;
+        max-width: 230px;
     }
 }
 </style>
