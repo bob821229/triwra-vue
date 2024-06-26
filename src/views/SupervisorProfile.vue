@@ -2,8 +2,8 @@
   <h1 style="text-align: center;">董事會/諮詢委員/顧問/主管簡介</h1>
   <div class="top_wrap">
     <h2>董事會</h2>
-    <p>董事長：<a href="#虞國興">虞國興</a></p>
-    <p>董事：王瑞德、呂芳堅、吳瑞賢、林聰賢、林濟民、陳伸賢、曹啟鴻、張輝元、許銘熙、游保杉、<a href="#虞國興">虞國興</a>、蔡明華（依姓氏筆畫序）</p>
+    <p>董事長：<a href="#吳榮義">吳榮義</a></p>
+    <p>董事：王瑞德、吳瑞賢、周師文、林聰賢、林濟民、陳伸賢、許銘熙、游保杉、蔡明華、<a href="#虞國興">虞國興</a>（依姓氏筆畫序）</p>
 
 
     <h2>諮詢委員</h2>
@@ -16,10 +16,10 @@
 
     <h2>院長室</h2>
     <p>院長 <a href="#虞國興">虞國興</a></p>
-    <p>副院長 <a href="#鄭克聲">鄭克聲</a>、<a href="#吳啟瑞">吳啟瑞</a>
+    <p>副院長 <a href="#吳啟瑞">吳啟瑞</a>
     </p>
 
-    <p>助理院長 <a href="#李佩玲">李佩玲</a>、<a href="#邱豐真">邱豐真</a> 、<a href="#黃啟瑞">黃啟瑞</a> </p>
+    <p>助理院長 <a href="#李佩玲">李佩玲</a>、<a href="#邱豐真">邱豐真</a> </p>
 
   </div>
   <div class="content">
@@ -51,7 +51,7 @@
         </template>
 
         <template #img>
-          <img :src="`${url}/SupervisorProfile/${obj.name}.jpg`" class="img-fluid" alt="...">
+          <img :src="`${obj.pic}`" class="img-fluid" alt="...">
         </template>
       </ManagerCard>
     </div>
@@ -71,6 +71,7 @@ interface SupervisorProfile {
   school: string;
   educationalQualifications: string[];
   experience: string[];
+  pic: string;
   // Add other properties as needed
 }
 
@@ -80,8 +81,8 @@ onMounted(async () => {
   data.value = response.data
   console.log(data.value)
 })
-const url = import.meta.env.VITE_BASE_IMAGE_URL
-console.log(url)
+// const url = import.meta.env.VITE_BASE_IMAGE_URL
+// console.log(url)
 </script>
 
 <style scoped lang="scss">

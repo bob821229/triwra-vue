@@ -9,7 +9,7 @@ const router = createRouter({
       name: 'home',
       component: HomeView,
       meta: {
-        title: '台農院復刻首頁' 
+        title: '台灣水資源與農業研究院' 
       }
     },
     {
@@ -33,7 +33,7 @@ const router = createRouter({
       
     },
     {
-      path: '/ResearchResults/:title',
+      path: '/ResearchResults',
       name: 'ResearchResults',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
@@ -121,12 +121,9 @@ const router = createRouter({
 
 
 router.beforeEach((to, from, next) => {
-  // 在每次路由跳转前执行
-  window.scrollTo(0, 0); // 滚动到页面顶部
-  // document.title = to.params.title || to.meta.title
-  document.title = typeof to.params.title === 'string' ? to.params.title : (typeof to.meta.title === 'string' ? to.meta.title : '');
-  
-  next(); // 继续路由跳转
-});
+  window.scrollTo(0, 0) // 滾動到頁面頂部
+  document.title = typeof to.params.title === 'string' ? to.params.title : (typeof to.meta.title === 'string' ? to.meta.title : '')
+  next() // 繼續路由跳轉
+})
 
 export default router

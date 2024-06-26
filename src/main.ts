@@ -16,7 +16,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 //導入 Bootstrap Icons 的 CSS 
 import 'bootstrap-icons/font/bootstrap-icons.css';
-
 // 導入Bootstrap Table
 import 'bootstrap-table';
 // 導入Bootstrap Table的css

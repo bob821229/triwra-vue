@@ -6,7 +6,7 @@
     :autoplay-disable-on-interaction="false">
     <swiper-slide>
       <div class="banner_wrap">
-        <img class="fill-image" src="../assets/images/Home/banner1.png" alt="...">
+        <img class="fill-image" src="../assets/images/Home/banner1.jpg" alt="...">
         <div class="text_wrap">
           <span>
             <span class="year">
@@ -62,7 +62,7 @@
           <div class="row">
             <div class="col-6">
               <div class="card bg-dark text-white">
-                <img src="../assets/images/Home/一所_介紹_Banner-p3w9ig9zi8rr9pe8ke565lut9tm8fy0acx18cj0zzk.png"
+                <img src="../assets/images/Home/一所_介紹_Banner-p3w9ig9zi8rr9pe8ke565lut9tm8fy0acx18cj0zzk.jpg"
                   class="card-img" alt="...">
                 <div class="card-img-overlay">
                   <RouterLink class="nav-link active" to="/ResearchInstitute1/研究一所/ResearchInstitute1">
@@ -78,7 +78,7 @@
             </div>
             <div class="col-6">
               <div class="card bg-dark text-white">
-                <img src="../assets/images/Home/2-1.png" class="card-img" alt="...">
+                <img src="../assets/images/Home/2-1.jpg" class="card-img" alt="...">
                 <div class="card-img-overlay">
                   <RouterLink class="nav-link active" to="/ResearchInstitute1/研究二所/ResearchInstitute2">
                     <h5 class="card-title">
@@ -134,7 +134,7 @@
             </div>
             <div class="col-6">
               <div class="card bg-dark text-white">
-                <img src="../assets/images/Home/6-1.png" class="card-img" alt="...">
+                <img src="../assets/images/Home/6-1.jpg" class="card-img" alt="...">
                 <div class="card-img-overlay">
                   <RouterLink class="nav-link active" to="/ResearchInstitute1/國際合作處/InternationalCooperationOffice">
                     <h5 class="card-title">

@@ -4,9 +4,11 @@ import axios from 'axios';
 // const baseURL= import.meta.env.VITE_BASE_URL
 let baseURL=''
 if(import.meta.env.PROD){
-  baseURL='/triwra-vue/data'
+  // baseURL='/triwra-vue/data'   //github用
+  baseURL='/data'
 }else{
-  baseURL='/src/data'
+  baseURL='/data'
+  // baseURL='/src/data'
 }
 const triwraRequest = axios.create({
   baseURL:baseURL
@@ -23,7 +25,7 @@ export const getResearchInstitute = (x:string) => {
 }
 // 研究成果
 export const getResearchResults = () => {
- return triwraRequest.get(`/ResearchResults/ResearchResults.json`);
+ return triwraRequest.get(`/ResearchResults/ResearchResults1.json`);
 }
 // 會議空間
 export const getMeetingSpace = () => {

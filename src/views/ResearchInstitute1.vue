@@ -103,8 +103,8 @@ function refreshCarousel() {
     $('.owl-carousel').trigger('refresh.owl.carousel');
 }
 watch(data, () => {
-    // console.log('data changed')
-    $('.owl-carousel').trigger('refresh.owl.carousel');
+    console.log('data changed')
+    // $('.owl-carousel').trigger('destroy.owl.carousel');
 
     // $('.owl-carousel').trigger('destroy.owl.carousel');
     // initCarousel()

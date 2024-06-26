@@ -15,6 +15,6 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: './docs', //===> 指派打包後要放的 資料夾路徑
+    // outDir: './docs', //===> 指派打包後要放的 資料夾路徑
   }
 })

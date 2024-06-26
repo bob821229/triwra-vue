@@ -196,9 +196,6 @@ const submitForm = async () => {
     const result = await v$.value.$validate();
     if (result) {
 
-        // const token = await execute('submit');
-        // console.log(token.score);
-        // console.log("表單驗證成功");
         if (response.value.length > 0) {
             alert("表單驗證成功");
         } else {

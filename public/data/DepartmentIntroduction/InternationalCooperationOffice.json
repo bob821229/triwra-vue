@@ -13,11 +13,11 @@
     ],
 
     "images":[
-        "/triwra-vue/images/InternationalCooperationOffice/image1.jpg",
-        "/triwra-vue/images/InternationalCooperationOffice/image2.jpg",
-        "/triwra-vue/images/InternationalCooperationOffice/image3.jpg",
-        "/triwra-vue/images/InternationalCooperationOffice/image4.jpg",
-        "/triwra-vue/images/InternationalCooperationOffice/image5.jpg"
+        "/images/InternationalCooperationOffice/image1.jpg",
+        "/images/InternationalCooperationOffice/image2.jpg",
+        "/images/InternationalCooperationOffice/image3.jpg",
+        "/images/InternationalCooperationOffice/image4.jpg",
+        "/images/InternationalCooperationOffice/image5.jpg"
     ]
   }
   

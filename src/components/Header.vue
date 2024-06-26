@@ -88,7 +88,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <RouterLink class="nav-link active" to="/ResearchResults/研究成果">研究成果
+                        <RouterLink class="nav-link active" to="/ResearchResults">研究成果
                         </RouterLink>
                         <!-- <a class="nav-link active" aria-current="page" href="#">研究成果</a> -->
                     </li>
@@ -117,6 +117,18 @@
 
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+// import bootstrap from 'bootstrap';
+// const dataToggle = document.querySelectorAll('[data-toggle]');
+// const menuToggle = document.getElementById('navbarSupportedContent');
+// const bsCollapse = new bootstrap.Collapse(menuToggle, {
+//     toggle: false
+// });
+
+// dataToggle.forEach((item) => {
+//     item.addEventListener('click', () => {
+//         bsCollapse.toggle()
+//     })
+// });
 
 </script>
 
