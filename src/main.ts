@@ -30,6 +30,9 @@ import { VueRecaptchaPlugin } from 'vue-recaptcha/head'
 // import 'owl.carousel/dist/assets/owl.carousel.css';
 // import 'owl.carousel';
 
+// 導入 PrimeVue 的 CSS 和 JavaScript
+import PrimeVue from 'primevue/config';
+import Aura from '@primevue/themes/aura';
 const app = createApp(App)
 // app.use(VueReCaptcha, {
 //     siteKey: '6LeSC6YpAAAAACs9UiTyYRTW-uaDXttA6UML6u-E',
@@ -42,6 +45,11 @@ const app = createApp(App)
 //   v2SiteKey: '6LfiNagpAAAAAHMu1v6CqjjOR9830A4YCZHpNT-p',
 //   v3SiteKey: '6LeSC6YpAAAAACs9UiTyYRTW-uaDXttA6UML6u-E',
 // })
+app.use(PrimeVue, {
+    theme: {
+        preset: Aura
+    }
+})
 app.use(createPinia())
 app.use(router)
 

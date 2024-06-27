@@ -1,4 +1,5 @@
 <template>
+
     <div class="dempartment_wrap">
         <div class="main_title">
             <h1>
@@ -34,25 +35,33 @@
         </div>
 
         <ul class="list_wrap">
-            <li v-for="item in data.researchAreaslist">{{ item }}</li>
+            <li v-for="(item, index) in data.researchAreaslist" :key="index">{{ item }}</li>
 
 
         </ul>
+        <!-- <button @click="initCarousel">初始化</button>
+        <button @click="destroyCarousel">摧毀</button>
+        <button @click="fetchData">fetchData</button> -->
 
+        <Carousel :value="data.images" :numVisible="3" :numScroll="1" :responsiveOptions="responsiveOptions" circular
+            :autoplayInterval="3000" :showIndicators="false">
+            <template #item="slotProps">
+                <div class="m-2">
+                    <img :src="slotProps.data" class="img-fluid" alt="...">
+                </div>
+            </template>
+        </Carousel>
 
-        <div class="owl-carousel owl-theme owl-loaded">
+        <!-- <div class="owl-carousel owl-theme owl-loaded">
             <div class="owl-stage-outer">
                 <div class="owl-stage">
-                    <div class="owl-item" v-for="(img, idx) in data.images" :key="idx">
+                    <div class="owl-item" v-for="(img, idx) in data.images" :key="img">
                         <img :src="img" alt="">
                     </div>
 
                 </div>
             </div>
-
-
-            <!-- <button class="my-2" @click="refreshCarousel">refresh</button> -->
-        </div>
+        </div> -->
 
 
     </div>
@@ -60,12 +69,37 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUpdated, watchEffect, watch, nextTick } from 'vue'
+import { ref, onMounted, onUpdated, watchEffect, watch, nextTick, onBeforeUnmount } from 'vue'
 // import Department from '../components/Department.vue'
 import { getResearchInstitute } from '../api/api'
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
 import { useRoute } from "vue-router";
+import Button from "primevue/button"
+import Image from 'primevue/image';
+import Carousel from 'primevue/carousel';
+const responsiveOptions = ref([
+    {
+        breakpoint: '1400px',
+        numVisible: 3,
+        numScroll: 1
+    },
+    {
+        breakpoint: '1199px',
+        numVisible: 3,
+        numScroll: 1
+    },
+    {
+        breakpoint: '767px',
+        numVisible: 2,
+        numScroll: 1
+    },
+    {
+        breakpoint: '575px',
+        numVisible: 1,
+        numScroll: 1
+    }
+]);
 const data = ref({
     departmentName: '',
     departmentTitle: '',
@@ -75,8 +109,9 @@ const data = ref({
     researchAreaslist: [],
     images: []
 });
-const route = useRoute()
 
+const route = useRoute()
+let carouselInstance: any = null;//輪播實例
 watchEffect(async () => {
     await fetchData()
 })
@@ -91,50 +126,52 @@ async function fetchData() {
     }
 }
 onMounted(async () => {
-    await fetchData()
-    initCarousel()
-
+    // await fetchData()
 })
-// onUpdated(() => {
-//     $('.owl-carousel').trigger('refresh.owl.carousel');
+//摧毀實例
+// function destroyCarousel() {
+//     console.log("destroyCarousel")
+//     console.log("carouselInstance:", carouselInstance)
+//     if (carouselInstance) {
+//         console.log("摧毀carousel")
+//         carouselInstance.trigger('destroy.owl.carousel');
+//     }
+// }
+
+//初始化實例
+// function initCarousel() {
+//     console.log("initCarousel")
+//     console.log("carouselInstance:", carouselInstance)
+//     // 初始化輪播組件時，應該確保當輪播組件被渲染到 DOM 中時再進行初始化，否則可能會造成初始化失敗
+//     if (document.querySelector('.owl-carousel')) {
+//         console.log("初始化carousel")
+//         carouselInstance = $('.owl-carousel').owlCarousel({
+//             loop: true,
+//             margin: 10,
+//             nav: true,
+//             dots: true,
+//             autoplay: true,
+//             autoplayTimeout: 3000,
+//             autoplayHoverPause: true,
+//             responsive: {
+//                 0: {
+//                     items: 1
+//                 },
+//                 600: {
+//                     items: 3
+//                 },
+//                 1000: {
+//                     items: 3
+//                 }
+//             }
+//         });
+
+//     }
+// }
+//卸載前
+// onBeforeUnmount(() => {
 
 // })
-function refreshCarousel() {
-    $('.owl-carousel').trigger('refresh.owl.carousel');
-}
-watch(data, () => {
-    console.log('data changed')
-    // $('.owl-carousel').trigger('destroy.owl.carousel');
-
-    // $('.owl-carousel').trigger('destroy.owl.carousel');
-    // initCarousel()
-})
-
-function initCarousel() {
-    // 初始化輪播組件時，應該確保當輪播組件被渲染到 DOM 中時再進行初始化，否則可能會造成初始化失敗
-    if (document.querySelector('.owl-carousel')) {
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: true,
-            dots: true,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            autoplayHoverPause: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 3
-                }
-            }
-        });
-    }
-}
 </script>
 
 <style scoped lang="scss">
