@@ -69,8 +69,8 @@
                 </RouterLink>
             </div>
             <div class="visitor_information">
-                <span>今天網站訪客數量:88</span>
-                <span>網站訪客數量統計:45771</span>
+                <span>今天網站訪客數量:{{ numberOfVisitors.todayVisitors }}</span>
+                <span>網站訪客數量統計:{{ numberOfVisitors.totalVisiotrs }}</span>
             </div>
         </footer>
     </div>
@@ -96,19 +96,34 @@
 </template>
 
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { RouterLink, RouterView, useRoute } from 'vue-router'
+import { ref, onMounted, watch } from 'vue'
+import axios from 'axios';
 import ScrollToTopBtn from './ScrollToTopBtn.vue'
 const footerControlText = ref('展開網站架構')
 const isExpandFooter = ref(true)
+const route = useRoute();
+const numberOfVisitors = ref()
 
-
-
+//展開收合
 function expandFooter() {
     isExpandFooter.value = !isExpandFooter.value
     footerControlText.value = isExpandFooter.value ? '展開網站架構' : '收合網站架構'
 }
-
+//取得訪客人數
+async function fetchApiData() {
+    try {
+        const response = await axios.get('/public/data/numberOfVisitors.json');
+        numberOfVisitors.value = response.data.data
+        console.log('今日訪客數量:', response.data.data.todayVisitors);
+        console.log('訪客統計:', response.data.data.totalVisiotrs);
+    } catch (error) {
+        console.error('API error:', error);
+    }
+}
+watch(route, () => {
+    fetchApiData();
+});
 
 </script>
 

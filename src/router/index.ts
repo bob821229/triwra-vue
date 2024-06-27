@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import axios from 'axios';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -121,9 +122,24 @@ const router = createRouter({
 
 
 router.beforeEach((to, from, next) => {
-  window.scrollTo(0, 0) // 滾動到頁面頂部
-  document.title = typeof to.params.title === 'string' ? to.params.title : (typeof to.meta.title === 'string' ? to.meta.title : '')
-  next() // 繼續路由跳轉
-})
+    window.scrollTo(0, 0) // 滾動到頁面頂部
+    document.title = typeof to.params.title === 'string' ? to.params.title : (typeof to.meta.title === 'string' ? to.meta.title : '')
+    next() // 繼續路由跳轉
+  
+});
+
+// router.beforeEach(async (to, from, next) => {
+//   try {
+//     // const response = await axios.get('/public/data/numberOfVisitors.json');
+//     // console.log('今日訪客數量:',response.data.data.todayVisitors);
+//     // console.log('訪客統計:',response.data.data.totalVisiotrs);
+//   } catch (error) {
+//     console.error('API error:', error);
+//   } finally {
+//     window.scrollTo(0, 0) // 滾動到頁面頂部
+//     document.title = typeof to.params.title === 'string' ? to.params.title : (typeof to.meta.title === 'string' ? to.meta.title : '')
+//     next() // 繼續路由跳轉
+//   }
+// });
 
 export default router
