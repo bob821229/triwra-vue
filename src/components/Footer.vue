@@ -85,7 +85,7 @@
             </div>
             <div class="col-md-12 col-lg-6">
                 <ul>
-                    <li>台灣水資源與農業研究院 版權所有 © 2025建議瀏覽器：Chrome</li>
+                    <li>台灣水資源與農業研究院 版權所有 © 2024建議瀏覽器：Chrome</li>
                     <li>網站全部圖文版權係屬本院所有，非經本院正式書面同意，不得將全部或部分內容，轉載於任何形式媒體</li>
 
                 </ul>
@@ -103,17 +103,28 @@ import ScrollToTopBtn from './ScrollToTopBtn.vue'
 const footerControlText = ref('展開網站架構')
 const isExpandFooter = ref(true)
 const route = useRoute();
-const numberOfVisitors = ref()
+const numberOfVisitors = ref({
+    todayVisitors: "",
+    totalVisiotrs: ""
+})
 
 //展開收合
 function expandFooter() {
     isExpandFooter.value = !isExpandFooter.value
     footerControlText.value = isExpandFooter.value ? '展開網站架構' : '收合網站架構'
 }
+
 //取得訪客人數
 async function fetchApiData() {
+    let baseURL = ''
+    if (import.meta.env.PROD) {
+        baseURL = '/api/home/getVisitorCounter'
+    } else {
+        baseURL = '/data/numberOfVisitors.json'
+    }
+    console.log("baseURL", baseURL)
     try {
-        const response = await axios.get('/public/data/numberOfVisitors.json');
+        const response = await axios.get(`${baseURL}`);
         numberOfVisitors.value = response.data.data
         console.log('今日訪客數量:', response.data.data.todayVisitors);
         console.log('訪客統計:', response.data.data.totalVisiotrs);

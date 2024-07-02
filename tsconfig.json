@@ -10,7 +10,9 @@
   ],
   "compilerOptions": {
     // 其他编译器选项
-    "typeRoots": ["./node_modules/@types", "./types"]
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "target": "esnext",//處理import.meta飄紅問題
+    "module": "es2020",//處理import.meta飄紅問題
  },
   "include": [
     "global.d.ts", // 添加這行

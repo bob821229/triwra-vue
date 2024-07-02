@@ -20,7 +20,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap-table';
 // 導入Bootstrap Table的css
 import 'bootstrap-table/dist/bootstrap-table.min.css';
-
+import * as bootstrap from 'bootstrap'
 // import { VueRecaptchaPlugin } from 'vue-recaptcha'
 // import { VueReCaptcha } from 'vue-recaptcha-v3';
 import { VueRecaptchaPlugin } from 'vue-recaptcha/head'
@@ -33,6 +33,10 @@ import { VueRecaptchaPlugin } from 'vue-recaptcha/head'
 // 導入 PrimeVue 的 CSS 和 JavaScript
 import PrimeVue from 'primevue/config';
 import Aura from '@primevue/themes/aura';
+// 導入 Swal 的 CSS 和 JavaScript
+
+import 'sweetalert2/src/sweetalert2.scss'
+
 const app = createApp(App)
 // app.use(VueReCaptcha, {
 //     siteKey: '6LeSC6YpAAAAACs9UiTyYRTW-uaDXttA6UML6u-E',

@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomeView from '../views/HomeView.vue';
+import SuccessPage from '../views/SuccessPage.vue';
 import axios from 'axios';
 
 const router = createRouter({
@@ -116,7 +117,14 @@ const router = createRouter({
         title: '影音專區' 
       }
       
-    }
+    },
+    { 
+      path: '/success', 
+      component: SuccessPage, 
+      meta: { 
+        title: '成功' 
+      } 
+    },
   ]
 })
 

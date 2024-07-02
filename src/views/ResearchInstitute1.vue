@@ -39,12 +39,10 @@
 
 
         </ul>
-        <!-- <button @click="initCarousel">初始化</button>
-        <button @click="destroyCarousel">摧毀</button>
-        <button @click="fetchData">fetchData</button> -->
 
-        <Carousel :value="data.images" :numVisible="3" :numScroll="1" :responsiveOptions="responsiveOptions" circular
-            :autoplayInterval="3000" :showIndicators="false">
+
+        <Carousel :key="carouselKey" :value="data.images" :numVisible="3" :numScroll="1"
+            :responsiveOptions="responsiveOptions" circular :autoplayInterval="3000" :showIndicators="false">
             <template #item="slotProps">
                 <div class="m-2">
                     <img :src="slotProps.data" class="img-fluid" alt="...">
@@ -52,16 +50,7 @@
             </template>
         </Carousel>
 
-        <!-- <div class="owl-carousel owl-theme owl-loaded">
-            <div class="owl-stage-outer">
-                <div class="owl-stage">
-                    <div class="owl-item" v-for="(img, idx) in data.images" :key="img">
-                        <img :src="img" alt="">
-                    </div>
 
-                </div>
-            </div>
-        </div> -->
 
 
     </div>
@@ -78,6 +67,7 @@ import { useRoute } from "vue-router";
 import Button from "primevue/button"
 import Image from 'primevue/image';
 import Carousel from 'primevue/carousel';
+//斷點設定
 const responsiveOptions = ref([
     {
         breakpoint: '1400px',
@@ -100,6 +90,7 @@ const responsiveOptions = ref([
         numScroll: 1
     }
 ]);
+// 部門資料
 const data = ref({
     departmentName: '',
     departmentTitle: '',
@@ -109,13 +100,16 @@ const data = ref({
     researchAreaslist: [],
     images: []
 });
-
+//輪播圖的key每次載入新的頁面就加1
+const carouselKey = ref(0);
+// 取出路由
 const route = useRoute()
-let carouselInstance: any = null;//輪播實例
+//監聽路由變化 
 watchEffect(async () => {
     await fetchData()
+    carouselKey.value++;
 })
-
+//取得部門資料
 async function fetchData() {
     try {
         const response = await getResearchInstitute(route.params.id as string)
@@ -125,53 +119,9 @@ async function fetchData() {
         console.log(error)
     }
 }
-onMounted(async () => {
-    // await fetchData()
-})
-//摧毀實例
-// function destroyCarousel() {
-//     console.log("destroyCarousel")
-//     console.log("carouselInstance:", carouselInstance)
-//     if (carouselInstance) {
-//         console.log("摧毀carousel")
-//         carouselInstance.trigger('destroy.owl.carousel');
-//     }
-// }
 
-//初始化實例
-// function initCarousel() {
-//     console.log("initCarousel")
-//     console.log("carouselInstance:", carouselInstance)
-//     // 初始化輪播組件時，應該確保當輪播組件被渲染到 DOM 中時再進行初始化，否則可能會造成初始化失敗
-//     if (document.querySelector('.owl-carousel')) {
-//         console.log("初始化carousel")
-//         carouselInstance = $('.owl-carousel').owlCarousel({
-//             loop: true,
-//             margin: 10,
-//             nav: true,
-//             dots: true,
-//             autoplay: true,
-//             autoplayTimeout: 3000,
-//             autoplayHoverPause: true,
-//             responsive: {
-//                 0: {
-//                     items: 1
-//                 },
-//                 600: {
-//                     items: 3
-//                 },
-//                 1000: {
-//                     items: 3
-//                 }
-//             }
-//         });
 
-//     }
-// }
-//卸載前
-// onBeforeUnmount(() => {
 
-// })
 </script>
 
 <style scoped lang="scss">
