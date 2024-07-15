@@ -10,7 +10,7 @@
         <div class="text_wrap">
           <span>
             <span class="year">
-              <count-up :start-val='1922' :end-val='2017' :duration='5'>
+              <count-up :start-val='1922' :end-val='2017' :duration='5' :options="{ useGrouping: false }">
                 <template #suffix>
                   <span>年</span>
                 </template>
@@ -20,7 +20,7 @@
           </span>
           <span>
             <span class="year">
-              <count-up :start-val='1911' :end-val='2019' :duration='5'>
+              <count-up :start-val='1911' :end-val='2019' :duration='5' :options="{ useGrouping: false }">
                 <template #suffix>
                   <span>年</span>
                 </template>
