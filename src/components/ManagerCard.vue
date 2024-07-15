@@ -1,33 +1,39 @@
 <template>
 
-    <div class="content card_wrap">
+    <div class="content card_wrap" v-for="(obj, idx) in props.parameters" :key="idx" :id="obj.name">
         <div class="row flex-column-reverse flex-md-row">
             <div class="col-md-6 col-sm-12 left_block">
 
 
-
-
-
                 <h2>
-                    <slot name="position">(放入職稱)</slot>
-                    <slot name="name">(放入姓名)</slot>
+                    {{ obj.position }}&nbsp;
+                    {{ obj.name }}
                 </h2>
                 <h3>專業領域</h3>
                 <p>
-                    <slot name="professionalField">(放入專業領域)</slot>
+                    {{ obj.professionalField }}
                 </p>
+                <h3 v-if="obj.honors && obj.honors.length > 0">榮譽</h3>
+                <ol v-if="obj.honors && obj.honors.length > 0">
+                    <li v-for="(honor, index) in obj.honors" :key="index">
+                        <p>{{ honor }}</p>
+                    </li>
+                </ol>
                 <h3>學歷</h3>
                 <ol>
-                    <slot name="educationalQualifications">(放入學歷)</slot>
-
+                    <li v-for="(school, index) in obj.educationalQualifications" :key="index">
+                        <p>{{ school }}</p>
+                    </li>
                 </ol>
                 <h3>經歷</h3>
                 <ol>
-                    <slot name="experience">(放入經歷)</slot>
+                    <li v-for="(exp, idx) in obj.experience" :key="idx">
+                        <p>{{ exp }}</p>
+                    </li>
                 </ol>
             </div>
             <div class="col-md-6 col-sm-12 right_block">
-                <slot name="img">(放入照片)</slot>
+                <img :src="`${obj.pic}`" class="img-fluid" alt="...">
 
             </div>
         </div>
@@ -35,6 +41,14 @@
 </template>
 
 <script setup lang="ts">
+import { defineProps } from 'vue';
+const props = defineProps({
+    parameters: {
+        type: Object,
+        default: () => ({})
+    }
+})
+console.log("data:", props.parameters)
 
 </script>
 

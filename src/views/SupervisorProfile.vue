@@ -16,45 +16,60 @@
 
     <h2>院長室</h2>
     <p>院長 <a href="#虞國興">虞國興</a></p>
-    <p>副院長 <a href="#吳啟瑞">吳啟瑞</a>
+    <p>副院長 <a href="#吳啟瑞">吳啟瑞</a>、<a href="#邱豐真">邱豐真</a>、<a href="#蘇騰鋐 博士
+      ">蘇騰鋐
+
+      </a>
     </p>
 
-    <p>助理院長 <a href="#李佩玲">李佩玲</a>、<a href="#邱豐真">邱豐真</a> </p>
+    <!-- <p>助理院長 <a href="#李佩玲">李佩玲</a> </p> -->
 
   </div>
   <div class="content">
     <h1 style="text-align: center;">主管簡介</h1>
-    <div v-for="(obj, idx) in data" :key="obj.name" :id="obj.name">
+    <ManagerCard :parameters="data"></ManagerCard>
+
+    <!-- <div v-for="(obj, idx) in data" :key="obj.name" :id="obj.name">
       <ManagerCard>
 
         <template #name>
           {{ obj.name }}
         </template>
-        <template #position>
+<template #position>
           {{ obj.position }}
         </template>
 
-        <template #professionalField>
+<template #professionalField>
           {{ obj.professionalField }}
         </template>
 
-        <template #educationalQualifications>
+
+<template #honors>
+          <template v-if="obj.honors && obj.honors.length > 0">
+            <li v-for="(honor, index) in obj.honors" :key="index">
+              <p>{{ honor }}</p>
+            </li>
+          </template>
+</template>
+
+<template #educationalQualifications>
           <li v-for="(school, index) in obj.educationalQualifications" :key="index">
             <p>{{ school }}</p>
           </li>
         </template>
 
-        <template #experience>
+<template #experience>
           <li v-for="(exp, idx) in obj.experience" :key="idx">
             <p>{{ exp }}</p>
           </li>
         </template>
 
-        <template #img>
+<template #img>
           <img :src="`${obj.pic}`" class="img-fluid" alt="...">
         </template>
-      </ManagerCard>
-    </div>
+</ManagerCard>
+</div> -->
+
 
   </div>
 
@@ -63,6 +78,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import { getSupervisorProfile } from '../api/api.js'
+// import ManagerCard from '../components/ManagerCard.vue'
 import ManagerCard from '../components/ManagerCard.vue'
 interface SupervisorProfile {
   name: string;
@@ -72,6 +88,7 @@ interface SupervisorProfile {
   educationalQualifications: string[];
   experience: string[];
   pic: string;
+  honors?: string[];
   // Add other properties as needed
 }
 
