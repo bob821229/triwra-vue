@@ -1,0 +1,21 @@
+{
+    "departmentName": "林業研究發展中心",
+    "departmentTitle": "林業政策研究及推動、森林碳匯、森林育樂評鑑、公私有林資源及經營輔導",
+    "departmentContent": "《林業研究發展中心》聚焦林業研究及政策規劃與推動。服務涵蓋林業政策方案規劃、森林碳匯研究、獎勵輔導造林法制推動、公私有林經營輔導、國家森林遊樂區評鑑等。為因應農業部林業及自然保育署(以下簡稱林業保育署)林產業振興，提昇國人對國產木竹材之信心，轄下設「國產木竹材驗證中心」，執行國產木竹材產銷履歷驗證。本中心協助林業保育署辦理林業技術及森林碳匯相關教育訓練課程，培力政府業務人員與林農之林業知能。",
+    "researchAreasTitle": "研究領域",
+    "researchAreasContent": "林業政策：以「森林永續經營及產業振興」為主軸，包括、森林育樂、森林碳匯、樹木保護、林業推廣、林業經濟、林業經營、森林資源管理、森林保育、林業職能基準、林業人才培訓機制。<br>國產木竹材驗證：推動並執行國產木竹材產銷履歷驗證查驗、辦理臺灣林產品生產追溯條碼QR code 申請。",
+    "researchAreaslist": [
+        "森林碳匯研究",
+        "獎勵輔導造林政策",
+        "公私有林經營管理及輔導",
+        "國家森林遊樂區及平地森林園區營運精進評估"
+    ],
+
+    "images": [
+        "/images/ForestryResearchAndDevelopmentCenter/image1.jpg",
+        "/images/ForestryResearchAndDevelopmentCenter/image2.jpg",
+        "/images/ForestryResearchAndDevelopmentCenter/image3.jpg",
+        "/images/ForestryResearchAndDevelopmentCenter/image5.jpg",
+        "/images/ForestryResearchAndDevelopmentCenter/image6.jpg"
+    ]
+}

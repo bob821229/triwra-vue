@@ -44,8 +44,8 @@
         <Carousel :key="carouselKey" :value="data.images" :numVisible="3" :numScroll="1"
             :responsiveOptions="responsiveOptions" circular :autoplayInterval="3000" :showIndicators="false">
             <template #item="slotProps">
-                <div class="m-2">
-                    <img :src="slotProps.data" class="img-fluid" alt="...">
+                <div class="m-2 ">
+                    <img :src="slotProps.data" class="img-fluid img_wrap" alt="...">
                 </div>
             </template>
         </Carousel>
@@ -107,6 +107,7 @@ const route = useRoute()
 //監聽路由變化 
 watchEffect(async () => {
     await fetchData()
+    //資料有變化 就重新渲染
     carouselKey.value++;
 })
 //取得部門資料
@@ -174,40 +175,8 @@ h1 {
     }
 }
 
-:deep(.owl-nav) {
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-
-
-    span {
-        font-size: 50px;
-        color: #fff;
-    }
-
-
-
-}
-
-:deep(.owl-dots) {
-    width: 100%;
-    height: 50px;
-    text-align: center;
-
-    .owl-dot {
-        display: inline-block;
-        margin: 0 5px;
-
-        span {
-            width: 50px;
-            height: 50px;
-            font-size: 50px;
-        }
-    }
-
-
+.img_wrap {
+    //height: 250px;
+    aspect-ratio: 1.6/1;
 }
 </style>

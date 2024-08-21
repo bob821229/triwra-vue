@@ -1,11 +1,18 @@
 <template>
     <div class="table_wrap">
-        <table id="myTable" class="table table-striped table-bordered border-dark">
+        <table id="myTable" class="table  table-bordered border-dark">
             <thead>
                 <tr>
-                    <th data-field="unit" data-halign="center" data-align="center">單位</th>
-                    <th data-field="name" data-halign="center" data-align="center">姓名</th>
-                    <th data-field="phone" data-halign="center" data-align="center">電話</th>
+                    <th data-field="unit" data-halign="center" data-align="center" data-width="40" data-width-unit="%"
+                        class="bold">
+                        單位</th>
+                    <th data-field="position" data-halign="center" data-align="center" data-width="20"
+                        data-width-unit="%" class="bold">職稱</th>
+                    <th data-field="name" data-halign="center" data-align="center" data-width="20" data-width-unit="%"
+                        class="bold">
+                        姓名</th>
+                    <th data-field="extension" data-halign="center" data-align="center" data-width="20"
+                        data-width-unit="%" class="bold red-text">02-2809-3497分機</th>
                 </tr>
             </thead>
         </table>
@@ -20,6 +27,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 import { RouterLink, RouterView } from 'vue-router'
+import { getContacts } from '../api/api.js'
 
 let data = [
     {
@@ -83,10 +91,90 @@ let data = [
         "phone": "(02)2809-3497 分機 861"
     }
 ]
-onMounted(() => {
+const tableData = ref([])
+
+function headerStyle(column: any) {
+    return {
+        classes: 'thead-style',
+        extension: {
+            classes: 'red-text'
+        },
+    }
+}
+
+// 取得聯絡資料
+const getTableData = async () => {
+    tableData.value = (await getContacts()).data
+}
+interface MergeInfo {
+    pre?: string | null;
+    mergeIdx?: number;
+    mergeRows?: number;
+    list?: Array<{
+        idx: number;
+        rowspan: number;
+    }>;
+}
+
+interface ObjType {
+    [key: string]: MergeInfo;
+}
+// 建立表格
+const bindTable = () => {
     $('#myTable').bootstrapTable({
-        data: data
+        data: tableData.value,
+        onPostBody: (d: any) => {
+            let mergeCompare: ObjType = {
+                unit: {
+                    pre: null,
+                    mergeIdx: 0,
+                    mergeRows: 0,
+                    list: [],
+                },
+            };
+            d.forEach((r: any, idx: any) => {
+                compareMenu(mergeCompare, "unit", r.unit, idx);
+            });
+
+            flushMergeInfo(mergeCompare, "unit");
+
+            console.log(mergeCompare);
+            mergeRows(mergeCompare, "unit");
+        },
+        headerStyle: headerStyle
     })
+}
+function compareMenu(obj: any, field: any, currentFieldValue: any, dataRowIdx: any) {
+    if (obj[field].pre != null && obj[field].pre != currentFieldValue) {
+        //flush
+        flushMergeInfo(obj, field);
+        obj[field].mergeIdx = dataRowIdx;
+        obj[field].mergeRows = 0;
+    }
+    obj[field].mergeRows++;
+    obj[field].pre = currentFieldValue;
+}
+function flushMergeInfo(obj: any, field: string) {
+    obj[field].list.push({
+        idx: obj[field].mergeIdx,
+        rowspan: obj[field].mergeRows,
+    });
+}
+function mergeRows(obj: any, field: string) {
+    obj[field].list.forEach((data: any, idx: any) => {
+        $("#myTable").bootstrapTable("mergeCells", {
+            index: data.idx,
+            field: field,
+            colspan: 1,
+            rowspan: data.rowspan,
+        });
+    });
+}
+
+onMounted(async () => {
+    await getTableData()
+    bindTable()
+
 })
 </script>
 
@@ -94,6 +182,11 @@ onMounted(() => {
 .table_wrap {
     width: 80%;
     margin: 50px auto 0;
+
+    .table td,
+    .table th {
+        font-weight: bold;
+    }
 
     .footer_wrap {
         padding: 10px 0;
@@ -103,5 +196,19 @@ onMounted(() => {
             color: #A47332;
         }
     }
+
+
+}
+
+.thead-style {
+    background-color: #F9E4A9;
+}
+
+td .bold {
+    font-weight: bold;
+}
+
+th.red-text {
+    color: red;
 }
 </style>

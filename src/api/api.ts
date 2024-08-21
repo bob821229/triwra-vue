@@ -35,3 +35,8 @@ export const getMeetingSpace = () => {
 export const getTrafficInformationAndMaps = () => {
  return triwraRequest.get(`/TrafficInformationAndMaps/TrafficInformationAndMaps.json`);
 }
+
+// 聯絡我們
+export const getContacts = () => {
+  return triwraRequest.get(`/ContactUs/contacts.json`);
+ }
