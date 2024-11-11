@@ -120,6 +120,21 @@
             </div>
             <div class="col-6">
               <div class="card bg-dark text-white">
+                <img src="../assets/images/Home/林業中心icon.png" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <RouterLink class="nav-link active"
+                    to="/ResearchInstitute1/林業研究發展中心/ForestryResearchAndDevelopmentCenter">
+                    <h5 class="card-title">
+                      林業研究發展中心
+                    </h5>
+                  </RouterLink>
+
+                  <p class="card-text">獎勵輔導造林政策，森林碳匯研究</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card bg-dark text-white">
                 <img src="../assets/images/Home/5.jpg" class="card-img" alt="...">
                 <div class="card-img-overlay">
                   <RouterLink class="nav-link active" to="/ResearchInstitute1/教育推廣處/EducationPromotionOffice">
@@ -146,6 +161,8 @@
                 </div>
               </div>
             </div>
+
+
 
           </div>
         </div>

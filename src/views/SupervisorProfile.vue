@@ -1,9 +1,9 @@
 <template>
-  <h1 style="text-align: center;">董事會/諮詢委員/顧問/主管簡介</h1>
+  <h1 style="text-align: center;">主管簡介</h1>
   <div class="top_wrap">
-    <h2>董事會</h2>
+    <!-- <h2>董事會</h2> -->
     <p>董事長：<a href="#吳榮義">吳榮義</a></p>
-    <p>董事：王瑞德、余化龍、吳瑞賢、周師文、林聰賢、林濟民、陳伸賢、許銘熙、黃裕星、游保杉、蔡明華、<a href="#虞國興">虞國興</a>（依姓氏筆畫序）</p>
+    <!-- <p>董事：王瑞德、余化龍、吳瑞賢、周師文、林聰賢、林濟民、陳伸賢、許銘熙、黃裕星、游保杉、蔡明華、<a href="#虞國興">虞國興</a>（依姓氏筆畫序）</p>
 
 
     <h2>諮詢委員</h2>
@@ -14,19 +14,16 @@
     <p>林尉濤、蔡明華、廖安定、鄭隨和、鄭錦章、黃裕星、郭鴻裕、 劉宗德 、陳尊賢、黃錦堂</p>
 
 
-    <h2>院長室</h2>
-    <p>院長 <a href="#虞國興">虞國興</a></p>
-    <p>副院長 <a href="#吳啟瑞">吳啟瑞</a>、<a href="#邱豐真">邱豐真</a>、<a href="#蘇騰鋐 博士
-      ">蘇騰鋐
-
-      </a>
+    <h2>院長室</h2> -->
+    <p>院　長：<a href="#虞國興">虞國興</a></p>
+    <p>副院長：<a href="#吳啟瑞">吳啟瑞</a>、<a href="#蘇騰鋐">蘇騰鋐</a>、<a href="#邱豐真">邱豐真</a>
     </p>
 
     <!-- <p>助理院長 <a href="#李佩玲">李佩玲</a> </p> -->
 
   </div>
   <div class="content">
-    <h1 style="text-align: center;">主管簡介</h1>
+    <!-- <h1 style="text-align: center;">主管簡介</h1> -->
     <ManagerCard :parameters="data"></ManagerCard>
 
     <!-- <div v-for="(obj, idx) in data" :key="obj.name" :id="obj.name">
@@ -113,8 +110,8 @@ onMounted(async () => {
 
   p,
   a {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 600;
     color: #54595f;
   }
 }

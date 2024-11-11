@@ -14,14 +14,14 @@
     {
         "unit": "院長室",
         "position": "副院長",
-        "name": "邱豐真",
-        "extension": "850"
+        "name": "蘇騰鋐",
+        "extension": "770"
     },
     {
         "unit": "院長室",
         "position": "副院長",
-        "name": "蘇騰鋐",
-        "extension": "770"
+        "name": "邱豐真",
+        "extension": "850"
     },
     {
         "unit": "研究一所",
@@ -38,14 +38,14 @@
     {
         "unit": "研究二所",
         "position": "副所長",
-        "name": "謝青宏",
-        "extension": "852"
+        "name": "吳柏澍",
+        "extension": "845"
     },
     {
         "unit": "研究二所",
         "position": "副所長",
-        "name": "吳柏澍",
-        "extension": "845"
+        "name": "許峻嘉",
+        "extension": "812"
     },
     {
         "unit": "研究三所",
@@ -82,6 +82,12 @@
         "position": "處長",
         "name": "陳志昇",
         "extension": "861"
+    },
+    {
+        "unit": "教育推廣處",
+        "position": "副處長",
+        "name": "謝青宏",
+        "extension": "852"
     },
     {
         "unit": "數位發展處",
