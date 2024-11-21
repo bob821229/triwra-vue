@@ -98,9 +98,12 @@
                         </ul>
                     </li>
                     <li class="nav-item">
+                        <RouterLink data-auto class="nav-link active" to="/DomesticWoodAndBamboo">驗證中心
+                        </RouterLink>
+                    </li>
+                    <li class="nav-item">
                         <RouterLink data-auto class="nav-link active" to="/ResearchResults">研究成果
                         </RouterLink>
-                        <!-- <a class="nav-link active" aria-current="page" href="#">研究成果</a> -->
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" data-auto aria-current="page"

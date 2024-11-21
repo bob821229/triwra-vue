@@ -12,7 +12,7 @@
                         class="bold">
                         姓名</th>
                     <th data-field="extension" data-halign="center" data-align="center" data-width="20"
-                        data-width-unit="%" class="bold red-text">02-2809-3497分機</th>
+                        data-width-unit="%" class="bold">02-2809-3497分機</th>
                 </tr>
             </thead>
         </table>

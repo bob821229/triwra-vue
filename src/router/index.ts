@@ -47,6 +47,18 @@ const router = createRouter({
       
     },
     {
+      path: '/DomesticWoodAndBamboo',
+      name: 'DomesticWoodAndBamboo',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/DomesticWoodAndBamboo.vue'),
+      meta: {
+        title: '國產木竹材' 
+      }
+      
+    },
+    {
       path: '/ContactUs',
       name: 'ContactUs',
       // route level code-splitting
@@ -55,6 +67,18 @@ const router = createRouter({
       component: () => import('../views/ContactUs.vue'),
       meta: {
         title: '聯絡我們' 
+      }
+      
+    },
+    {
+      path: '/ContactForm1',
+      name: 'ContactForm1',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/ContactForm1.vue'),
+      meta: {
+        title: '聯絡填寫單' 
       }
       
     },

@@ -47,6 +47,18 @@
         </div>
       </div>
     </swiper-slide>
+    <swiper-slide>
+      <RouterLink  to="/DomesticWoodAndBamboo">
+        <div class="banner_wrap">
+          <img class="fill-image" src="../assets/images/Home/banner3.jpg" alt="國產木竹材驗證中心">
+          <div class="text_wrap" style="justify-content: center;top: 80%;">
+            <span>
+              國產木竹材驗證中心
+            </span>
+          </div>
+        </div>
+      </RouterLink>
+    </swiper-slide>
   </swiper-container>
   <div id="section1" class="content">
 
@@ -372,7 +384,7 @@ const endVal = ref(2017);
       width: 60%;
       z-index: 10;
       color: #fff;
-      font-size: 2.5rem;
+      font-size: 3.5rem;
       line-height: 1;
       font-weight: 600;
       text-shadow: 5px 5px 10px rgb(0, 0, 0);

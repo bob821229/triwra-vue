@@ -1,0 +1,32 @@
+
+{
+    "departmentName": "國產木竹材驗證中心",
+    "departmentTitle": "關於我們",
+    "departmentContent": "本院2020年起投入國產木竹材產銷履歷驗證，並於2024年2月20日通過TAF評鑑符合認證之要求，成為國產木竹材產銷履歷驗證中心(認證編號：PC097)，2024年5月28日正式揭牌營運，以「效率、服務、公正」為原則，提供申請者高品質之服務，以嘉惠林農。本中心所執行的驗證業務，獲財團法人全國認證基金會的批准及接受監督，並培訓四位實習稽核員(下表)，確保驗證工作專業與服務品質。",
+    "researchAreasTitle": "驗證文件下載",
+    "researchAreasContent": "",
+    "files":[
+        {
+            "fileName": "產銷履歷驗證作業手冊",
+            "fileUrl": "產銷履歷驗證作業手冊.pdf"
+        },
+        {
+            "fileName": "驗證申請書",
+            "fileUrl": "產銷履歷驗證申請書.docx"
+        },
+        {
+            "fileName": "申訴申請單",
+            "fileUrl": "抱怨與申訴申請單.docx"
+        }
+    ],
+    "images":[
+        "/images/DomesticWoodAndBamboo/1.jpg",
+        "/images/DomesticWoodAndBamboo/2.jpg",
+        "/images/DomesticWoodAndBamboo/3.jpg",
+        "/images/DomesticWoodAndBamboo/4.jpg",
+        "/images/DomesticWoodAndBamboo/5.jpg",
+        "/images/DomesticWoodAndBamboo/6.jpg",
+        "/images/DomesticWoodAndBamboo/7.jpg"
+    ]
+  }
+  
