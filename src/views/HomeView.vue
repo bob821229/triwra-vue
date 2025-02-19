@@ -48,7 +48,7 @@
       </div>
     </swiper-slide>
     <swiper-slide>
-      <RouterLink  to="/DomesticWoodAndBamboo">
+      <RouterLink to="/DomesticWoodAndBamboo">
         <div class="banner_wrap">
           <img class="fill-image" src="../assets/images/Home/banner3.jpg" alt="國產木竹材驗證中心">
           <div class="text_wrap" style="justify-content: center;top: 80%;">
@@ -71,110 +71,125 @@
       <h1>研究領域</h1>
       <div class="row">
         <div class="col-md-7 col-sm-12">
-          <div class="row">
+          <div class="row ">
             <div class="col-6">
-              <div class="card bg-dark text-white">
-                <img src="../assets/images/Home/一所_介紹_Banner-p3w9ig9zi8rr9pe8ke565lut9tm8fy0acx18cj0zzk.jpg"
-                  class="card-img" alt="...">
-                <div class="card-img-overlay">
-                  <RouterLink class="nav-link active" to="/ResearchInstitute1/研究一所/ResearchInstitute1">
-                    <h5 class="card-title">
+              <RouterLink class="nav-link active" to="/ResearchInstitute1/研究一所/ResearchInstitute1">
+                <div class="card ">
+                  <img src="../assets/images/Home/一所_介紹_Banner-p3w9ig9zi8rr9pe8ke565lut9tm8fy0acx18cj0zzk.jpg"
+                    class="card-img-top" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title text-white">
                       研究一所
                     </h5>
-                  </RouterLink>
-
-
-                  <p class="card-text">水文技術、農業用水與防災科技研究</p>
+                  </div>
                 </div>
-              </div>
+                <p class="card_text h6 fw-bold mt-1">農業水資源與灌溉管理</p>
+              </RouterLink>
             </div>
             <div class="col-6">
-              <div class="card bg-dark text-white">
-                <img src="../assets/images/Home/2-1.jpg" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                  <RouterLink class="nav-link active" to="/ResearchInstitute1/研究二所/ResearchInstitute2">
-                    <h5 class="card-title">
+              <RouterLink class="nav-link active" to="/ResearchInstitute1/研究二所/ResearchInstitute2">
+                <div class="card ">
+                  <img src="../assets/images/Home/2-1.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title text-white">
                       研究二所
                     </h5>
-                  </RouterLink>
-
-                  <p class="card-text">農田水利事業組織、公共政策與行政法制研究</p>
+                  </div>
                 </div>
-              </div>
+                <p class="card_text h6 fw-bold mt-1">公共治理與制度創新</p>
+              </RouterLink>
             </div>
+          </div>
+          <div class="row ">
             <div class="col-6">
-              <div class="card bg-dark text-white">
-                <img src="../assets/images/Home/3.jpg" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                  <RouterLink class="nav-link active" to="/ResearchInstitute1/研究三所/ResearchInstitute3">
-                    <h5 class="card-title">
+              <RouterLink class="nav-link active" to="/ResearchInstitute1/研究三所/ResearchInstitute3">
+                <div class="card ">
+                  <img src="../assets/images/Home/3.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title text-white">
                       研究三所
                     </h5>
-                  </RouterLink>
-
-                  <p class="card-text">農業環境、農業經濟、農業政策與林業政策研究</p>
+                  </div>
                 </div>
-              </div>
+                <p class="card_text h6 fw-bold mt-1">農業環境與政策</p>
+              </RouterLink>
             </div>
+
             <div class="col-6">
-              <div class="card bg-dark text-white">
-                <img src="../assets/images/Home/4.jpg" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                  <RouterLink class="nav-link active" to="/ResearchInstitute1/研究四所/ResearchInstitute4">
-                    <h5 class="card-title">
+              <RouterLink class="nav-link active" to="/ResearchInstitute1/研究四所/ResearchInstitute4">
+                <div class="card ">
+                  <img src="../assets/images/Home/4.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title text-white">
                       研究四所
                     </h5>
-                  </RouterLink>
-
-                  <p class="card-text">農田水利工程規劃管考與生態檢核研究</p>
+                  </div>
                 </div>
-              </div>
+                <p class="card_text h6 fw-bold mt-1">工程治理與生態保育</p>
+              </RouterLink>
             </div>
+
+          </div>
+          <div class="row ">
+
             <div class="col-6">
-              <div class="card bg-dark text-white">
-                <img src="../assets/images/Home/林業中心icon.png" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                  <RouterLink class="nav-link active"
-                    to="/ResearchInstitute1/林業研究發展中心/ForestryResearchAndDevelopmentCenter">
-                    <h5 class="card-title">
+              <RouterLink class="nav-link active" to="/ResearchInstitute1/研究五所/ResearchInstitute5">
+                <div class="card ">
+                  <img src="../assets/images/Home/5-1.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title text-white">
+                      研究五所
+                    </h5>
+                  </div>
+                </div>
+                <p class="card_text h6 fw-bold mt-1">法制研究</p>
+              </RouterLink>
+            </div>
+
+            <div class="col-6">
+              <RouterLink class="nav-link active"
+                to="/ResearchInstitute1/林業研究發展中心/ForestryResearchAndDevelopmentCenter">
+                <div class="card ">
+                  <img src="../assets/images/Home/林業中心icon.png" class="card-img-top" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title text-white">
                       林業研究發展中心
                     </h5>
-                  </RouterLink>
-
-                  <p class="card-text">獎勵輔導造林政策，森林碳匯研究</p>
+                  </div>
                 </div>
-              </div>
+                <p class="card_text h6 fw-bold mt-1">獎勵輔導造林政策，森林碳匯研究</p>
+              </RouterLink>
             </div>
+
+          </div>
+          <div class="row ">
             <div class="col-6">
-              <div class="card bg-dark text-white">
-                <img src="../assets/images/Home/5.jpg" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                  <RouterLink class="nav-link active" to="/ResearchInstitute1/教育推廣處/EducationPromotionOffice">
-                    <h5 class="card-title">
+              <RouterLink class="nav-link active" to="/ResearchInstitute1/教育推廣處/EducationPromotionOffice">
+                <div class="card ">
+                  <img src="../assets/images/Home/5.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title text-white">
                       教育推廣處
                     </h5>
-                  </RouterLink>
-
-                  <p class="card-text">農田水利業務人員教育訓練與政策推廣研究</p>
+                  </div>
                 </div>
-              </div>
+                <p class="card_text h6 fw-bold mt-1">農田水利業務人員教育訓練與政策推廣研究</p>
+              </RouterLink>
             </div>
+
             <div class="col-6">
-              <div class="card bg-dark text-white">
-                <img src="../assets/images/Home/6-1.jpg" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                  <RouterLink class="nav-link active" to="/ResearchInstitute1/國際合作處/InternationalCooperationOffice">
-                    <h5 class="card-title">
+              <RouterLink class="nav-link active" to="/ResearchInstitute1/國際合作處/InternationalCooperationOffice">
+                <div class="card ">
+                  <img src="../assets/images/Home/6-1.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title text-white">
                       國際合作處
                     </h5>
-                  </RouterLink>
-
-                  <p class="card-text">國際合作交流及宣導</p>
+                  </div>
                 </div>
-              </div>
+                <p class="card_text h6 fw-bold mt-1">國際合作交流及宣導</p>
+              </RouterLink>
             </div>
-
-
 
           </div>
         </div>
@@ -264,19 +279,25 @@
           </figure>
         </div>
         <div class="platform col-md-4">
-          <figure class="figure">
-            <img src="../assets/images/Home/綠能發展資訊.png" class="figure-img img-fluid rounded" alt="...">
-          </figure>
+          <a href="https://age.triwra.org.tw/" target="_blank">
+            <figure class="figure">
+              <img src="../assets/images/Home/綠能發展資訊.png" class="figure-img img-fluid rounded" alt="...">
+            </figure>
+          </a>
         </div>
         <div class="platform col-md-4">
-          <figure class="figure">
-            <img src="../assets/images/Home/國際灌溉排水協會中華民國國家委員會.png" class="figure-img img-fluid rounded" alt="...">
-          </figure>
+          <a href="https://ctcid.triwra.org.tw/" target="_blank">
+            <figure class="figure">
+              <img src="../assets/images/Home/國際灌溉排水協會中華民國國家委員會.png" class="figure-img img-fluid rounded" alt="...">
+            </figure>
+          </a>
         </div>
         <div class="platform col-md-6">
-          <figure class="figure">
-            <img src="../assets/images/Home/前瞻基礎建設.png" class="figure-img img-fluid rounded" alt="...">
-          </figure>
+          <a href=" http://coafli.triwra.org.tw/" target="_blank">
+            <figure class="figure">
+              <img src="../assets/images/Home/前瞻基礎建設.png" class="figure-img img-fluid rounded" alt="...">
+            </figure>
+          </a>
         </div>
         <div class="platform col-md-6">
           <figure class="figure">
@@ -336,7 +357,8 @@ const endVal = ref(2017);
 
   .card {
     border: none;
-    margin-bottom: 40px;
+
+
   }
 
   .card-img-overlay {
@@ -348,17 +370,19 @@ const endVal = ref(2017);
     padding: 0;
 
     .card-title {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-weight: 600;
       padding-bottom: 0;
       margin-bottom: 0;
     }
 
     .card-text {
-      font-size: 0.9rem;
+      font-size: 12px;
       font-weight: 500;
     }
+
   }
+
 }
 
 
@@ -471,6 +495,10 @@ const endVal = ref(2017);
   max-height: 107px;
 }
 
+.card_text {
+  font-size: 16px;
+}
+
 @media screen and (max-width:768px) {
   .mySwiper {
 
@@ -492,5 +520,11 @@ const endVal = ref(2017);
 
 
   }
+
+  .card_text {
+    font-size: 12px;
+  }
+
+
 }
 </style>

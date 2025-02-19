@@ -2,7 +2,7 @@
     <div class="banner_wrap">
         <img   class="fill_image" src="../assets/images/DomesticWoodAndBamboo/banner.jpg" alt="...">
         <!-- <div class="background-image"></div> -->
-        <div class="text_wrap text-nowrap">國產木竹材驗證中心</div>
+        <div class="text_wrap text-nowrap" style="justify-content: center;top: 80%;">國產木竹材驗證中心</div>
     </div>
     <div class="dempartment_wrap">
         <div class="main_title" v-show="false">
@@ -108,11 +108,8 @@
 
         <!-- TODO 聯絡資訊 -->
         <div class="contact_wrap mt-5"
-            style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
-            <RouterLink class="btn custom-button-color rounded-pill" to="/ContactForm1" v-show="false">
-                <i class="bi bi-envelope me-1"></i>留言給我們
-            </RouterLink>
-            <button class="btn custom-button-color rounded-pill mb-2" @click="isShowFrom = !isShowFrom">
+            style="display: flex;flex-direction: column;justify-content: center;align-items: center;" >
+            <button class="btn custom-button-color rounded-pill mb-2" @click="isShowFrom = !isShowFrom" v-show="false">
                 <i class="bi" :class="isShowFrom ? 'bi-chevron-up' : 'bi-envelope'"></i>
                 {{ isShowFrom ? '收起表單' : '留言給我們' }}
             </button>
@@ -202,14 +199,14 @@
 
             <!-- <a href="mailto:blue821229@triwra.org.tw">發送電子郵件</a> -->
             <div class="content_text mt-2 mb-5">
-                聯絡資訊：02-28093497 #764 賴靖陽 執行秘書<br>
+                聯絡資訊：02-28093497 #764 賴靖陽 <br>
             </div>
 
 
         </div>
 
         <!-- TODO 輪播圖 -->
-        <Carousel :key="carouselKey" :value="data.images" :numVisible="3" :numScroll="1"
+        <Carousel class="mt-5" :key="carouselKey" :value="data.images" :numVisible="3" :numScroll="1"
             :responsiveOptions="responsiveOptions" circular :autoplayInterval="3000" :showIndicators="false">
             <template #item="slotProps">
                 <div class="m-2 ">
@@ -219,7 +216,7 @@
         </Carousel>
 
         <!-- TODO 地理位置 -->
-        <div class="map_wrap">
+        <div class="map_wrap mt-5">
             <div class="second-title">
                 <span>地理位置</span>
             </div>

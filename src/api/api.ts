@@ -25,7 +25,7 @@ export const getResearchInstitute = (x:string) => {
 }
 // 研究成果
 export const getResearchResults = () => {
- return triwraRequest.get(`/ResearchResults/ResearchResults1.json`);
+ return triwraRequest.get(`/ResearchResults/ResearchResults.json`);
 }
 // 會議空間
 export const getMeetingSpace = () => {
