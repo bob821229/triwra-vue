@@ -103,10 +103,6 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <RouterLink data-auto class="nav-link active" to="/DomesticWoodAndBamboo">驗證中心
-                        </RouterLink>
-                    </li>
-                    <li class="nav-item">
                         <RouterLink data-auto class="nav-link active" to="/ResearchResults">研究成果
                         </RouterLink>
                     </li>

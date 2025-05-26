@@ -47,7 +47,7 @@
         </div>
       </div>
     </swiper-slide>
-    <swiper-slide>
+    <!-- <swiper-slide>
       <RouterLink to="/DomesticWoodAndBamboo">
         <div class="banner_wrap">
           <img class="fill-image" src="../assets/images/Home/banner3.jpg" alt="國產木竹材驗證中心">
@@ -58,12 +58,12 @@
           </div>
         </div>
       </RouterLink>
-    </swiper-slide>
+    </swiper-slide> -->
   </swiper-container>
   <div id="section1" class="content">
 
     <!-- 介紹 -->
-    <p class="introduction" style="text-indent: 2em;">
+    <p class="txt" style="text-indent: 2em;">
       台灣水資源與農業研究院前身為淡江大學水資源管理與政策研究中心(1999-2017)，在水資源與農業研究領域耕耘多年。2017年為賡續拓墾研究範疇，乃匯聚水資源及農田水利相關領域的社會賢達與專家學者之力創立台水農院，原隸屬新北市政府教育局；2019年為尋求更大發展與突破，改隸教育部，成為「全國性教育事務財團法人學術研究機構」。多年來，本院研究領域涵蓋水資源管理與政策研究、水利工程規劃、水土環境監測、法規研析、教育訓練、國際合作交流等，不僅為農民解決農田灌溉問題，也提供研究成果做為政府決策參考，在水資源與農業領域相關研究機構中佔有獨特地位，也獲得政府與學界的肯定與重視。值此全球氣候變異現象日趨頻繁之際，水資源問題更為複雜而嚴峻，農業環境也面臨前所未有的考驗。本院擁有眾多專業人才，累積多年的研究經驗，針對各項問題深入分析探討，提出前瞻性的見解，積極因應氣侯變遷議題，提供更具效率的知識服務，發揮「政府智庫」的功能，為水資源與農業永續貢獻棉薄之力。
     </p>
 
@@ -72,146 +72,160 @@
       <div class="row">
         <div class="col-md-7 col-sm-12">
           <div class="row ">
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12 researchInstitute_card">
               <RouterLink class="nav-link active" to="/ResearchInstitute1/研究一所/ResearchInstitute1">
                 <div class="card ">
                   <img src="../assets/images/Home/一所_介紹_Banner-p3w9ig9zi8rr9pe8ke565lut9tm8fy0acx18cj0zzk.jpg"
-                    class="card-img-top" alt="...">
-                  <div class="card-img-overlay">
-                    <h5 class="card-title text-white">
-                      研究一所
-                    </h5>
-                  </div>
+                    class="card-img-top researchInstitute_img" alt="...">
+                  <h5 class="card-title d-none d-md-block">
+                    研究一所
+                  </h5>
+                  <h5 class="card_title2 d-block d-md-none">
+                    研究一所
+                  </h5>
+                  <h5 class="card_txt_mobile">
+                    農業水資源與灌溉管理
+                  </h5>
                 </div>
-                <p class="card_text h6 fw-bold mt-1">農業水資源與灌溉管理</p>
+                <p class="card_text h6 fw-bold mt-1 d-none d-md-block">農業水資源與灌溉管理</p>
               </RouterLink>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12 researchInstitute_card">
               <RouterLink class="nav-link active" to="/ResearchInstitute1/研究二所/ResearchInstitute2">
                 <div class="card ">
-                  <img src="../assets/images/Home/2-1.jpg" class="card-img-top" alt="...">
-                  <div class="card-img-overlay">
-                    <h5 class="card-title text-white">
-                      研究二所
-                    </h5>
-                  </div>
+                  <img src="../assets/images/Home/2-1.jpg" class="card-img-top researchInstitute_img" alt="...">
+                  <h5 class="card-title d-none d-md-block">
+                    研究二所
+                  </h5>
+                  <h5 class="card_title2 d-block d-md-none">
+                    研究二所
+                  </h5>
+                  <h5 class="card_txt_mobile">
+                    公共治理與制度創新
+                  </h5>
                 </div>
-                <p class="card_text h6 fw-bold mt-1">公共治理與制度創新</p>
+                <p class="card_text h6 fw-bold mt-1 d-none d-md-block">公共治理與制度創新</p>
               </RouterLink>
             </div>
           </div>
           <div class="row ">
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12 researchInstitute_card">
               <RouterLink class="nav-link active" to="/ResearchInstitute1/研究三所/ResearchInstitute3">
                 <div class="card ">
-                  <img src="../assets/images/Home/3.jpg" class="card-img-top" alt="...">
-                  <div class="card-img-overlay">
-                    <h5 class="card-title text-white">
-                      研究三所
-                    </h5>
-                  </div>
+                  <img src="../assets/images/Home/3.jpg" class="card-img-top researchInstitute_img" alt="...">
+                  <h5 class="card-title d-none d-md-block">
+                    研究三所
+                  </h5>
+                  <h5 class="card_title2 d-block d-md-none">
+                    研究三所
+                  </h5>
+                  <h5 class="card_txt_mobile">
+                    農業環境與政策
+                  </h5>
                 </div>
-                <p class="card_text h6 fw-bold mt-1">農業環境與政策</p>
+                <p class="card_text h6 fw-bold mt-1 d-none d-md-block">農業環境與政策</p>
               </RouterLink>
             </div>
-
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12 researchInstitute_card">
               <RouterLink class="nav-link active" to="/ResearchInstitute1/研究四所/ResearchInstitute4">
                 <div class="card ">
-                  <img src="../assets/images/Home/4.jpg" class="card-img-top" alt="...">
-                  <div class="card-img-overlay">
-                    <h5 class="card-title text-white">
-                      研究四所
-                    </h5>
-                  </div>
+                  <img src="../assets/images/Home/4.jpg" class="card-img-top researchInstitute_img" alt="...">
+                  <h5 class="card-title d-none d-md-block">
+                    研究四所
+                  </h5>
+                  <h5 class="card_title2 d-block d-md-none">
+                    研究四所
+                  </h5>
+                  <h5 class="card_txt_mobile">
+                    工程治理與生態保育
+                  </h5>
                 </div>
-                <p class="card_text h6 fw-bold mt-1">工程治理與生態保育</p>
+                <p class="card_text h6 fw-bold mt-1 d-none d-md-block">工程治理與生態保育</p>
               </RouterLink>
             </div>
 
           </div>
           <div class="row ">
 
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12 researchInstitute_card">
               <RouterLink class="nav-link active" to="/ResearchInstitute1/研究五所/ResearchInstitute5">
                 <div class="card ">
-                  <img src="../assets/images/Home/5-1.jpg" class="card-img-top" alt="...">
-                  <div class="card-img-overlay">
-                    <h5 class="card-title text-white">
-                      研究五所
-                    </h5>
-                  </div>
+                  <img src="../assets/images/Home/5-1.jpg" class="card-img-top researchInstitute_img" alt="...">
+                  <h5 class="card-title d-none d-md-block">
+                    研究五所
+                  </h5>
+                  <h5 class="card_title2 d-block d-md-none">
+                    研究五所
+                  </h5>
+                  <h5 class="card_txt_mobile">
+                    法制研究
+                  </h5>
                 </div>
-                <p class="card_text h6 fw-bold mt-1">法制研究</p>
+                <p class="card_text h6 fw-bold mt-1 d-none d-md-block">法制研究</p>
               </RouterLink>
             </div>
 
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12 researchInstitute_card">
               <RouterLink class="nav-link active"
                 to="/ResearchInstitute1/林業研究發展中心/ForestryResearchAndDevelopmentCenter">
                 <div class="card ">
-                  <img src="../assets/images/Home/林業中心icon.png" class="card-img-top" alt="...">
-                  <div class="card-img-overlay">
-                    <h5 class="card-title text-white">
-                      林業研究發展中心
-                    </h5>
-                  </div>
+                  <img src="../assets/images/Home/林業中心icon.png" class="card-img-top researchInstitute_img" alt="...">
+                  <h5 class="card-title">
+                    林業研究發展中心
+                  </h5>
                 </div>
-                <p class="card_text h6 fw-bold mt-1">獎勵輔導造林政策，森林碳匯研究</p>
+                <p class="card_text h6 fw-bold mt-1 d-none d-md-block">獎勵輔導造林政策，森林碳匯研究</p>
               </RouterLink>
             </div>
 
           </div>
           <div class="row ">
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12 researchInstitute_card">
               <RouterLink class="nav-link active" to="/ResearchInstitute1/教育推廣處/EducationPromotionOffice">
                 <div class="card ">
-                  <img src="../assets/images/Home/5.jpg" class="card-img-top" alt="...">
-                  <div class="card-img-overlay">
-                    <h5 class="card-title text-white">
-                      教育推廣處
-                    </h5>
-                  </div>
+                  <img src="../assets/images/Home/5.jpg" class="card-img-top researchInstitute_img" alt="...">
+                  <h5 class="card-title">
+                    教育推廣處
+                  </h5>
                 </div>
-                <p class="card_text h6 fw-bold mt-1">農田水利業務人員教育訓練與政策推廣研究</p>
+                <p class="card_text h6 fw-bold mt-1 d-none d-md-block">農田水利業務人員教育訓練與政策推廣研究</p>
               </RouterLink>
             </div>
 
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12 researchInstitute_card">
               <RouterLink class="nav-link active" to="/ResearchInstitute1/國際合作處/InternationalCooperationOffice">
                 <div class="card ">
-                  <img src="../assets/images/Home/6-1.jpg" class="card-img-top" alt="...">
-                  <div class="card-img-overlay">
-                    <h5 class="card-title text-white">
-                      國際合作處
-                    </h5>
-                  </div>
+                  <img src="../assets/images/Home/6-1.jpg" class="card-img-top researchInstitute_img" alt="...">
+                  <h5 class="card-title">
+                    國際合作處
+                  </h5>
                 </div>
-                <p class="card_text h6 fw-bold mt-1">國際合作交流及宣導</p>
+                <p class="card_text h6 fw-bold mt-1 d-none d-md-block">國際合作交流及宣導</p>
               </RouterLink>
             </div>
+
 
           </div>
         </div>
         <div class="col-md-5 col-sm-12">
           <ul>
-            <li>水文分析與觀測技術</li>
-            <li>水資源政策與區域水資源經營管理</li>
-            <li>農業水資源智慧管理與灌溉配水</li>
-            <li>水資源旱澇災害預警與應變制度</li>
-            <li>農田水利事業制度</li>
-            <li>農田水利組織</li>
-            <li>公共政策及行政法制</li>
-            <li>推動林業永續發展</li>
-            <li>推動友善環境農業</li>
-            <li>促進畜牧業產業發展</li>
-            <li>農田水利中長程政策規劃及推動</li>
-            <li>農田水利工程灌溉排水、取水設施工程可行性</li>
-            <li>生態環境調查與生態檢核機制</li>
-            <li>農田水利教育訓練</li>
-            <li>水資源與農業會議與活動</li>
-            <li>志工管理培訓</li>
-            <li>食農教育推廣</li>
+            <li class="txt">水文分析與觀測技術</li>
+            <li class="txt">水資源政策與區域水資源經營管理</li>
+            <li class="txt">農業水資源智慧管理與灌溉配水</li>
+            <li class="txt">水資源旱澇災害預警與應變制度</li>
+            <li class="txt">農田水利事業制度</li>
+            <li class="txt">農田水利組織</li>
+            <li class="txt">公共政策及行政法制</li>
+            <li class="txt">推動林業永續發展</li>
+            <li class="txt">推動友善環境農業</li>
+            <li class="txt">促進畜牧業產業發展</li>
+            <li class="txt">農田水利中長程政策規劃及推動</li>
+            <li class="txt">農田水利工程灌溉排水、取水設施工程可行性</li>
+            <li class="txt">生態環境調查與生態檢核機制</li>
+            <li class="txt">農田水利教育訓練</li>
+            <li class="txt">水資源與農業會議與活動</li>
+            <li class="txt">志工管理培訓</li>
+            <li class="txt">食農教育推廣</li>
           </ul>
         </div>
       </div>
@@ -355,36 +369,44 @@ const endVal = ref(2017);
     padding: 3px;
   }
 
-  .card {
-    border: none;
 
-
-  }
-
-  .card-img-overlay {
-    text-shadow: #363636 2px 2px 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    text-align: center;
-    padding: 0;
-
-    .card-title {
-      font-size: 1.4rem;
-      font-weight: 600;
-      padding-bottom: 0;
-      margin-bottom: 0;
-    }
-
-    .card-text {
-      font-size: 12px;
-      font-weight: 500;
-    }
-
-  }
 
 }
 
+// 所處卡片
+.researchInstitute_card {
+  .card {
+    border: none;
+    position: relative;
+
+    .card-title {
+      position: absolute;
+      font-size: 1.4rem;
+      font-weight: 600;
+      bottom: 0;
+      // top: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 0;
+      white-space: nowrap;
+      text-shadow: #363636 2px 2px 5px;
+      color: #fff;
+    }
+
+    .card_txt_mobile {
+      display: none;
+      color: #fff;
+      text-shadow: #363636 2px 2px 5px;
+      position: absolute;
+    }
+
+  }
+
+  .card-text {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
 
 
 .mySwiper {
@@ -500,6 +522,72 @@ const endVal = ref(2017);
 }
 
 @media screen and (max-width:768px) {
+  .txt {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .researchInstitute_img {
+    aspect-ratio: 3/1;
+  }
+
+  // 所處卡片
+  .researchInstitute_card {
+    padding: 10px 0;
+
+    .card {
+      border: none;
+      position: relative;
+
+      .card-title {
+        position: absolute;
+        font-size: 1.4rem;
+        font-weight: 600;
+        // bottom: 0;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 0;
+        white-space: nowrap;
+        text-shadow: #363636 2px 2px 5px;
+        color: #fff;
+        // display: none;
+        
+      }
+      .card_title2{
+        margin-bottom: 0;
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        white-space: nowrap;
+        text-shadow: #363636 2px 2px 5px;
+        color: #fff;
+        font-weight: 600;
+        // top: 100;
+        transform: translateX(-0%);
+      }
+
+      .card_txt_mobile {
+        display: block;
+        color: #fff;
+        text-shadow: #363636 2px 2px 5px;
+        position: absolute;
+        font-size: 1.4rem;
+      font-weight: 600;
+        white-space: nowrap;
+        left: 50%;
+        top: 5%;
+        transform: translateX(-50%);
+      }
+
+    }
+
+    .card-text {
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+
   .mySwiper {
 
     .banner_wrap {

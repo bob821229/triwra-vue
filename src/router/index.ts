@@ -46,18 +46,18 @@ const router = createRouter({
       }
       
     },
-    {
-      path: '/DomesticWoodAndBamboo',
-      name: 'DomesticWoodAndBamboo',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/DomesticWoodAndBamboo.vue'),
-      meta: {
-        title: '國產木竹材' 
-      }
+    // {
+    //   path: '/DomesticWoodAndBamboo',
+    //   name: 'DomesticWoodAndBamboo',
+    //   // route level code-splitting
+    //   // this generates a separate chunk (About.[hash].js) for this route
+    //   // which is lazy-loaded when the route is visited.
+    //   component: () => import('../views/DomesticWoodAndBamboo.vue'),
+    //   meta: {
+    //     title: '國產木竹材' 
+    //   }
       
-    },
+    // },
     {
       path: '/ContactUs',
       name: 'ContactUs',
@@ -149,6 +149,7 @@ const router = createRouter({
         title: '成功' 
       } 
     },
+    { path: '/:pathMatch(.*)*', redirect: '/' }, // 捕捉所有未知路徑並導向首頁
   ]
 })
 
