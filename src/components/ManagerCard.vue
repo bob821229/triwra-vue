@@ -105,4 +105,7 @@ p {
     font-weight: 500;
     color: #54595f;
 }
+.img-fluid{
+    max-width: 90%;
+}
 </style>
