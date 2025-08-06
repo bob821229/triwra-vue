@@ -54,6 +54,10 @@
                                 </RouterLink>
                             </li>
                             <li>
+                                <RouterLink class="dropdown-item" to="/ResearchInstitute1/研究六所/ResearchInstitute6">研究六所
+                                </RouterLink>
+                            </li>
+                            <li>
                                 <RouterLink data-auto class="dropdown-item"
                                     to="/ResearchInstitute1/林業研究發展中心/ForestryResearchAndDevelopmentCenter">林業研究發展中心
                                 </RouterLink>

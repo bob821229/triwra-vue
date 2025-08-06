@@ -136,10 +136,8 @@ h1 {
     font-weight: 500;
     color: #A47332;
     text-align: center;
-
     span {
         border-bottom: #A47332 3px solid;
-
     }
 }
 

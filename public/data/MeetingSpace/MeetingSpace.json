@@ -1,26 +1,26 @@
 [
     {
-        "name": "5樓之5 會議室",
-        "img": "/images/MeetingSpace/5F-5.jpg"
-    },
-    {
-        "name": "16樓之2 會議室",
-        "img": "/images/MeetingSpace/16F-2.jpg"
-    },
-    {
-        "name": "19樓之10 會議室",
-        "img": "/images/MeetingSpace/19F-10.jpg"
-    },
-    {
-        "name": "20樓之3 電腦教室",
-        "img": "/images/MeetingSpace/20F-3.jpg"
+        "name": "20樓之8 會議室",
+        "img": "/images/MeetingSpace/20-8.jpg"
     },
     {
         "name": "20樓之5 會議室",
-        "img": "/images/MeetingSpace/20F-5.jpg"
+        "img": "/images/MeetingSpace/20-5.jpg"
     },
     {
-        "name": "20樓之9 會議室",
-        "img": "/images/MeetingSpace/20F-9.jpg"
+        "name": "20樓之7 會議室",
+        "img": "/images/MeetingSpace/20-7.jpg"
+    },
+    {
+        "name": "20樓之3 電腦及VR教室",
+        "img": "/images/MeetingSpace/20-3.jpg"
+    },
+    {
+        "name": "5樓之5 會議室",
+        "img": "/images/MeetingSpace/5-5.jpg"
+    },
+    {
+        "name": "16樓之2 會議室",
+        "img": "/images/MeetingSpace/16-2.jpg"
     }
 ]

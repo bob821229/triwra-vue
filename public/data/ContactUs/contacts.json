@@ -20,8 +20,8 @@
     {
         "unit": "院長室",
         "position": "副院長",
-        "name": "邱豐真",
-        "extension": "850"
+        "name": "邱雅梅",
+        "extension": "853"
     },
     {
         "unit": "研究一所",
@@ -32,12 +32,6 @@
     {
         "unit": "研究二所",
         "position": "所長",
-        "name": "邱雅梅",
-        "extension": "853"
-    },
-    {
-        "unit": "研究二所",
-        "position": "副所長",
         "name": "吳柏澍",
         "extension": "845"
     },
@@ -54,24 +48,6 @@
         "extension": "836"
     },
     {
-        "unit": "研究三所",
-        "position": "副所長",
-        "name": "陳逸庭",
-        "extension": "833"
-    },
-    {
-        "unit": "研究四所",
-        "position": "所長",
-        "name": "侯玉娟",
-        "extension": "777"
-    },
-    {
-        "unit": "研究四所",
-        "position": "副所長",
-        "name": "紀祥鈺",
-        "extension": "773"
-    },
-    {
         "unit": "研究四所",
         "position": "副所長",
         "name": "李思緯",
@@ -84,10 +60,16 @@
         "extension": "881"
     },
     {
-        "unit": "教育推廣處",
-        "position": "副處長",
-        "name": "謝青宏",
-        "extension": "852"
+        "unit": "研究六所",
+        "position": "所長",
+        "name": "紀祥鈺",
+        "extension": "781"
+    },
+    {
+        "unit": "研究六所",
+        "position": "副所長",
+        "name": "蕭維廷",
+        "extension": "783"
     },
     {
         "unit": "數位發展處",
@@ -102,15 +84,9 @@
         "extension": "844"
     },
     {
-        "unit": "農業水環境服務團",
-        "position": "執行秘書",
-        "name": "林科均",
-        "extension": "832"
-    },
-    {
-        "unit": "生態檢核及保育服務團",
-        "position": "執行秘書",
-        "name": "紀祥鈺",
-        "extension": "773"
+        "unit": "教育推廣處",
+        "position": "副處長",
+        "name": "謝青宏",
+        "extension": "852"
     }
 ]
