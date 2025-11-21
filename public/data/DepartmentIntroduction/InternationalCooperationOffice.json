@@ -1,23 +1,36 @@
-
 {
     "departmentName": "國際合作處",
     "departmentTitle": "國際合作交流及宣導",
     "departmentContent": "《國際合作處》掌握國際最新農業與水資源動態，促進我國與他國專業知識與技術交流。專責辦理相關領域國際研討會、國際交流業務。多年來已參與農田水利領域重要國際組織，如國際灌溉排水協會(ICID)年會及技術工作小組參與，國際灌溉排水協會中華民國國家委員會秘書處會務運作，強化農田水利國際交流。",
     "researchAreasTitle": "研究領域",
     "researchAreasContent": "拓展國際合作交流管道、建置國際新知體制、出版國際農業與水資源相關書籍等。",
-    "researchAreaslist":[
+    "researchAreaslist": [
         "國際新知體系建置",
         "國際交流活動辦理",
         "國際組織合作交流",
         "專業文件翻譯及出版"
     ],
 
-    "images":[
-        "/images/InternationalCooperationOffice/image1.jpg",
-        "/images/InternationalCooperationOffice/image2.jpg",
-        "/images/InternationalCooperationOffice/image3.jpg",
-        "/images/InternationalCooperationOffice/image4.jpg",
-        "/images/InternationalCooperationOffice/image5.jpg"
+    "images": [
+        {
+            "url": "/images/InternationalCooperationOffice/image1.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/InternationalCooperationOffice/image2.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/InternationalCooperationOffice/image3.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/InternationalCooperationOffice/image4.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/InternationalCooperationOffice/image5.jpg",
+            "text": ""
+        }
     ]
-  }
-  
+}

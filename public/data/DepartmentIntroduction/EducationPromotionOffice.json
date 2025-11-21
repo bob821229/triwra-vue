@@ -1,25 +1,44 @@
-
 {
     "departmentName": "教育推廣處",
     "departmentTitle": "協助政府機關規劃專業教育訓練與政策推廣活動",
     "departmentContent": "《教育推廣處》著重政府機關政策議題的宣傳與推廣，致力協助機關客製化專業課程，並針對多元需求策劃與執行系列活動，包含評選表揚、典禮規劃、知識轉譯與傳播等。另結合VR（虛擬實境）技術與影像紀實，提供專業服務。",
     "researchAreasTitle": "研究領域",
     "researchAreasContent": "結合企劃力與科技力，整合多方資源，致力於為農業及相關領域提供全方位服務，推動產業全面發展。",
-    "researchAreaslist":[
+    "researchAreaslist": [
         "政策推廣與公共傳播",
         "VR數位科技應用",
         "農田水利教育",
         "大型活動統籌規劃"
     ],
 
-    "images":[
-        "/images/EducationPromotionOffice/image1.jpg",
-        "/images/EducationPromotionOffice/image2.jpg",
-        "/images/EducationPromotionOffice/image3.jpg",
-        "/images/EducationPromotionOffice/image4.jpg",
-        "/images/EducationPromotionOffice/image5.jpg",
-        "/images/EducationPromotionOffice/image6.jpg",
-        "/images/EducationPromotionOffice/image7.jpg"
+    "images": [
+        {
+            "url": "/images/EducationPromotionOffice/image1.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/EducationPromotionOffice/image2.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/EducationPromotionOffice/image3.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/EducationPromotionOffice/image4.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/EducationPromotionOffice/image5.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/EducationPromotionOffice/image6.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/EducationPromotionOffice/image7.jpg",
+            "text": ""
+        }
     ]
-  }
-  
+}

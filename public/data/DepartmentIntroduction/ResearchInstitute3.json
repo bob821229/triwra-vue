@@ -7,31 +7,109 @@
     "researchAreaslist": [],
 
     "images": [
-        "/images/ResearchInstitute3/image1.jpg",
-        "/images/ResearchInstitute3/image2.jpg",
-        "/images/ResearchInstitute3/image3.jpg",
-        "/images/ResearchInstitute3/image4.jpg",
-        "/images/ResearchInstitute3/image5.jpg",
-        "/images/ResearchInstitute3/image6.jpg",
-        "/images/ResearchInstitute3/image7.jpg",
-        "/images/ResearchInstitute3/image8.jpg",
-        "/images/ResearchInstitute3/image9.jpg",
-        "/images/ResearchInstitute3/image10.jpg",
-        "/images/ResearchInstitute3/image11.jpg",
-        "/images/ResearchInstitute3/image12.jpg",
-        "/images/ResearchInstitute3/image13.jpg",
-        "/images/ResearchInstitute3/image14.jpg",
-        "/images/ResearchInstitute3/image15.jpg",
-        "/images/ResearchInstitute3/image16.jpg",
-        "/images/ResearchInstitute3/image17.jpg",
-        "/images/ResearchInstitute3/image18.jpg",
-        "/images/ResearchInstitute3/image19.jpg",
-        "/images/ResearchInstitute3/image20.jpg",
-        "/images/ResearchInstitute3/image21.jpg",
-        "/images/ResearchInstitute3/image22.jpg",
-        "/images/ResearchInstitute3/image23.jpg",
-        "/images/ResearchInstitute3/image24.jpg",
-        "/images/ResearchInstitute3/image25.jpg",
-        "/images/ResearchInstitute3/image26.jpg"
+        {
+            "url": "/images/ResearchInstitute3/image1.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image2.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image3.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image4.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image5.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image6.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image7.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image8.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image9.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image10.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image11.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image12.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image13.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image14.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image15.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image16.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image17.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image18.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image19.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image20.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image21.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image22.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image23.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image24.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image25.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute3/image26.jpg",
+            "text": ""
+        }
     ]
 }

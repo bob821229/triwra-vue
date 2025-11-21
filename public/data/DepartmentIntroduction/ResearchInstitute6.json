@@ -1,28 +1,56 @@
-
 {
     "departmentName": "研究六所",
     "departmentTitle": "生態檢核及保育研究所",
     "departmentContent": "《研究六所》專注於「公共工程生態檢核」與「生態環境保育」兩大核心領域。在生態檢核方面，聚焦於農田水利及河川治理工程生態檢核作業；在生態保育方面，涵蓋重要濕地保育與利用檢討、生態資源基礎調查及生態環境教育等項目。本所致力於建立工程與生態領域之間的溝通橋梁，促進永續發展與環境共融。",
     "researchAreasTitle": "研究領域",
     "researchAreasContent": "本所專注於結合生態與公共工程領域之研究與實務應用，主要涵蓋：",
-    "researchAreaslist":[
+    "researchAreaslist": [
         "政府公共工程之生態檢核作業",
         "生態資源基礎調查與野生動植物辨識",
         "濕地保育與永續利用之檢討",
         "棲地環境友善方案之評估與設計"
     ],
 
-    "images":[
-        "/images/ResearchInstitute6/image1.jpg",
-        "/images/ResearchInstitute6/image2.jpg",
-        "/images/ResearchInstitute6/image3.jpg",
-        "/images/ResearchInstitute6/image4.jpg",
-        "/images/ResearchInstitute6/image5.jpg",
-        "/images/ResearchInstitute6/image6.jpg",
-        "/images/ResearchInstitute6/image7.jpg",
-        "/images/ResearchInstitute6/image8.jpg",
-        "/images/ResearchInstitute6/image9.jpg",
-        "/images/ResearchInstitute6/image10.jpg"
+    "images": [
+        {
+            "url": "/images/ResearchInstitute6/image1.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute6/image2.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute6/image3.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute6/image4.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute6/image5.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute6/image6.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute6/image7.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute6/image8.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute6/image9.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ResearchInstitute6/image10.jpg",
+            "text": ""
+        }
     ]
-  }
-  
+}

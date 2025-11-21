@@ -12,10 +12,25 @@
     ],
 
     "images": [
-        "/images/ForestryResearchAndDevelopmentCenter/image1.jpg",
-        "/images/ForestryResearchAndDevelopmentCenter/image2.jpg",
-        "/images/ForestryResearchAndDevelopmentCenter/image3.jpg",
-        "/images/ForestryResearchAndDevelopmentCenter/image5.jpg",
-        "/images/ForestryResearchAndDevelopmentCenter/image6.jpg"
+        {
+            "url": "/images/ForestryResearchAndDevelopmentCenter/image1.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ForestryResearchAndDevelopmentCenter/image2.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ForestryResearchAndDevelopmentCenter/image3.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ForestryResearchAndDevelopmentCenter/image5.jpg",
+            "text": ""
+        },
+        {
+            "url": "/images/ForestryResearchAndDevelopmentCenter/image6.jpg",
+            "text": ""
+        }
     ]
 }

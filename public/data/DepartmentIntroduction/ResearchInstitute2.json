@@ -13,13 +13,34 @@
     ],
 
     "images":[
-        "/images/ResearchInstitute2/image1.jpg",
-        "/images/ResearchInstitute2/image2.jpg",
-        "/images/ResearchInstitute2/image3.jpg",
-        "/images/ResearchInstitute2/image4.jpg",
-        "/images/ResearchInstitute2/image5.jpg",
-        "/images/ResearchInstitute2/image6.jpg",
-        "/images/ResearchInstitute2/image7.jpg"
+        {
+            "url":"/images/ResearchInstitute2/image1.jpg",
+            "text":""
+        },
+        {
+            "url":"/images/ResearchInstitute2/image2.jpg",
+            "text":""
+        },
+        {
+            "url":"/images/ResearchInstitute2/image3.jpg",
+            "text":""
+        },
+        {
+            "url":"/images/ResearchInstitute2/image4.jpg",
+            "text":""
+        },
+        {
+            "url":"/images/ResearchInstitute2/image5.jpg",
+            "text":""
+        },
+        {
+            "url":"/images/ResearchInstitute2/image6.jpg",
+            "text":""
+        },
+        {
+            "url":"/images/ResearchInstitute2/image7.jpg",
+            "text":""
+        }
     ]
   }
   

@@ -45,8 +45,8 @@
             :responsiveOptions="responsiveOptions" circular :autoplayInterval="3000" :showIndicators="false">
             <template #item="slotProps">
                 <div class="m-2 " style="text-align: center;">
-                    <img :src="slotProps.data" class="img-fluid img_wrap" alt="...">
-                    <!-- 你好嗎你好嗎你好嗎你好嗎你好嗎你好嗎你好 -->
+                    <img :src="slotProps.data.url" class="img-fluid img_wrap" alt="...">
+                    <span class="img_text">{{ slotProps.data.text }}</span>
                 </div>
             </template>
         </Carousel>
@@ -177,5 +177,8 @@ h1 {
 .img_wrap {
     //height: 250px;
     aspect-ratio: 1.6/1;
+}
+.img_text{
+    letter-spacing: 0.5px;
 }
 </style>

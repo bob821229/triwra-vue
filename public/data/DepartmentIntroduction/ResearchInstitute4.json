@@ -1,31 +1,71 @@
-
 {
     "departmentName": "研究四所",
     "departmentTitle": "農田水利工程建設與管理研究所",
     "departmentContent": "《研究四所》專研農田水利基礎設施工程業務，如灌溉排水系統工程治理調查規劃、農水路設計規範研訂、農業災害調適作為及相關農田水利工程事務等。主要研究領域關注於農田水利工程規劃、農水路改善調查、農田排水積淹水災害改善評估、灌溉排水工程治理規劃設計及可行性評估等面向。近年亦投入於農業水資源基礎建設之相關農業生產設施、農業災害調查分析、工程生態永續及自然解方等綜合性業務。",
     "researchAreasTitle": "研究領域",
     "researchAreasContent": "農地重劃緊急農水路管制考核、擴大灌溉服務工程可行性評估、水利工程環境影響評估、農田灌溉排水工程規劃設計、農田水利設施基礎建設中長程發展規劃、農田水利工程效益評析、工程減災措施研究、因應氣候變遷農業調適作為等研究。",
-    "researchAreaslist":[
+    "researchAreaslist": [
         "農田水利中長程政策規劃及推動研究",
         "農田水利工程灌溉排水、取水設施工程可行性研究",
         "農田水利工程事務及相關規範"
     ],
 
-    "images":[
-        "/images/ResearchInstitute4/image1.jpg",
-        "/images/ResearchInstitute4/image2.jpg",
-        "/images/ResearchInstitute4/image3.jpg",
-        "/images/ResearchInstitute4/image4.jpg",
-        "/images/ResearchInstitute4/image5.jpg",
-        "/images/ResearchInstitute4/image6.jpg",
-        "/images/ResearchInstitute4/image7.jpg",
-        "/images/ResearchInstitute4/image8.jpg",
-        "/images/ResearchInstitute4/image9.jpg",
-        "/images/ResearchInstitute4/image10.jpg",
-        "/images/ResearchInstitute4/image11.jpg",
-        "/images/ResearchInstitute4/image12.jpg",
-        "/images/ResearchInstitute4/image13.jpg",
-        "/images/ResearchInstitute4/image14.jpg"
+    "images": [
+        {
+            "url":"/images/ResearchInstitute4/image1.jpg",
+            "text": ""
+        },
+        {
+            "url":"/images/ResearchInstitute4/image2.jpg",
+            "text": ""
+        },
+        {
+            "url":"/images/ResearchInstitute4/image3.jpg",
+            "text": ""
+        },
+        {
+            "url":"/images/ResearchInstitute4/image4.jpg",
+            "text": ""
+        },
+        {
+            "url":"/images/ResearchInstitute4/image5.jpg",
+            "text": ""
+        },
+        {
+            "url":"/images/ResearchInstitute4/image6.jpg",
+            "text": ""
+        },
+        {
+            "url":"/images/ResearchInstitute4/image7.jpg",
+            "text": ""
+        },
+        {
+            "url":"/images/ResearchInstitute4/image8.jpg",
+            "text": ""
+        },
+        {
+            "url":"/images/ResearchInstitute4/image9.jpg",
+            "text": ""
+        },
+        {
+            "url":"/images/ResearchInstitute4/image10.jpg",
+            "text": ""
+        },
+        {
+            "url":"/images/ResearchInstitute4/image11.jpg",
+            "text": ""
+        },
+        {
+            "url":"/images/ResearchInstitute4/image12.jpg",
+            "text": ""
+        },
+        {
+            "url":"/images/ResearchInstitute4/image13.jpg",
+            "text": ""
+        },
+        {
+            "url":"/images/ResearchInstitute4/image14.jpg",
+            "text": ""
+        }
     ]
-  }
-  
+}
