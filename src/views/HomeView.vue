@@ -94,9 +94,9 @@
         <div class="research">
             <h1>研究領域</h1>
             <div class="row">
-                <div class="col-md-7 col-sm-12">
+                <div class="col-md-12 col-sm-12">
                     <div class="row">
-                        <div class="col-md-6 col-sm-12 researchInstitute_card">
+                        <div class="col-md-4 col-sm-12 researchInstitute_card">
                             <RouterLink
                                 class="nav-link active"
                                 to="/ResearchInstitute1/研究一所/ResearchInstitute1"
@@ -124,7 +124,7 @@
                                 </p>
                             </RouterLink>
                         </div>
-                        <div class="col-md-6 col-sm-12 researchInstitute_card">
+                        <div class="col-md-4 col-sm-12 researchInstitute_card">
                             <RouterLink
                                 class="nav-link active"
                                 to="/ResearchInstitute1/研究二所/ResearchInstitute2"
@@ -152,9 +152,7 @@
                                 </p>
                             </RouterLink>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12 researchInstitute_card">
+                        <div class="col-md-4 col-sm-12 researchInstitute_card">
                             <RouterLink
                                 class="nav-link active"
                                 to="/ResearchInstitute1/研究三所/ResearchInstitute3"
@@ -182,7 +180,7 @@
                                 </p>
                             </RouterLink>
                         </div>
-                        <div class="col-md-6 col-sm-12 researchInstitute_card">
+                        <div class="col-md-4 col-sm-12 researchInstitute_card">
                             <RouterLink
                                 class="nav-link active"
                                 to="/ResearchInstitute1/研究四所/ResearchInstitute4"
@@ -210,9 +208,7 @@
                                 </p>
                             </RouterLink>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12 researchInstitute_card">
+                        <div class="col-md-4 col-sm-12 researchInstitute_card">
                             <RouterLink
                                 class="nav-link active"
                                 to="/ResearchInstitute1/研究五所/ResearchInstitute5"
@@ -238,7 +234,7 @@
                                 </p>
                             </RouterLink>
                         </div>
-                        <div class="col-md-6 col-sm-12 researchInstitute_card">
+                        <div class="col-md-4 col-sm-12 researchInstitute_card">
                             <RouterLink
                                 class="nav-link active"
                                 to="/ResearchInstitute1/研究六所/ResearchInstitute6"
@@ -266,9 +262,7 @@
                                 </p>
                             </RouterLink>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12 researchInstitute_card">
+                        <div class="col-md-4 col-sm-12 researchInstitute_card">
                             <RouterLink
                                 class="nav-link active"
                                 to="/ResearchInstitute1/林業研究發展中心/ForestryResearchAndDevelopmentCenter"
@@ -288,7 +282,7 @@
                                 </p>
                             </RouterLink>
                         </div>
-                        <div class="col-md-6 col-sm-12 researchInstitute_card">
+                        <div class="col-md-4 col-sm-12 researchInstitute_card">
                             <RouterLink
                                 class="nav-link active"
                                 to="/ResearchInstitute1/教育推廣處/EducationPromotionOffice"
@@ -308,9 +302,7 @@
                                 </p>
                             </RouterLink>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12 researchInstitute_card">
+                        <div class="col-md-4 col-sm-12 researchInstitute_card">
                             <RouterLink
                                 class="nav-link active"
                                 to="/ResearchInstitute1/國際合作處/InternationalCooperationOffice"
@@ -332,7 +324,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 col-sm-12">
+                <div class="col-md-5 col-sm-12" v-if="false">
                     <ul>
                         <li class="txt">水文分析與觀測技術</li>
                         <li class="txt">水資源政策與區域水資源經營管理</li>
@@ -358,7 +350,7 @@
             </div>
         </div>
 
-        <div class="video_wrap">
+        <div class="video_wrap" v-if="false">
             <h1>影音專區</h1>
             <div class="row">
                 <div class="col-md-3">
@@ -513,8 +505,8 @@ const endVal = ref(2017);
 
 <style scoped lang="scss">
 .content {
-    padding: 10px;
-    max-width: 1100px;
+    padding: 20px;
+    max-width: 1920px;
     margin: 50px auto;
     font-size: 1.375rem;
     font-weight: 700;
