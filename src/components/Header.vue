@@ -35,17 +35,20 @@
 
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
                             <li>
+                                <RouterLink @click="toggleMenu" class="dropdown-item" to="/ChairmanView">榮譽董事長</RouterLink>
+                            </li>
+                            <li>
                                 <RouterLink @click="toggleMenu" class="dropdown-item" to="/BusinessCategory">業務範疇</RouterLink>
                             </li>
                             <li>
                                 <RouterLink @click="toggleMenu" class="dropdown-item" to="/SupervisorProfile">主管簡介</RouterLink>
                             </li>
                             <li>
-                                <RouterLink @click="toggleMenu" class="dropdown-item" to="/MeetingSpace">會議空間</RouterLink>
+                                <RouterLink @click="toggleMenu" class="dropdown-item" to="/TrafficInformationAndMaps">院區簡介
+                                </RouterLink>
                             </li>
                             <li>
-                                <RouterLink @click="toggleMenu" class="dropdown-item" to="/TrafficInformationAndMaps">交通資訊
-                                </RouterLink>
+                                <RouterLink @click="toggleMenu" class="dropdown-item" to="/MeetingSpace">會議空間</RouterLink>
                             </li>
                             <li>
                                 <RouterLink @click="toggleMenu" class="dropdown-item" to="/AudioAndVideoArea">影音專區</RouterLink>

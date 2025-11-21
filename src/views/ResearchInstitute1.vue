@@ -44,8 +44,9 @@
         <Carousel :key="carouselKey" :value="data.images" :numVisible="3" :numScroll="1"
             :responsiveOptions="responsiveOptions" circular :autoplayInterval="3000" :showIndicators="false">
             <template #item="slotProps">
-                <div class="m-2 ">
+                <div class="m-2 " style="text-align: center;">
                     <img :src="slotProps.data" class="img-fluid img_wrap" alt="...">
+                    <!-- 你好嗎你好嗎你好嗎你好嗎你好嗎你好嗎你好 -->
                 </div>
             </template>
         </Carousel>

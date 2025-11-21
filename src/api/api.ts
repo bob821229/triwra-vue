@@ -19,6 +19,8 @@ const triwraRequest = axios.create({
 
 // 主管簡介
 export const getSupervisorProfile = () => triwraRequest.get('/SupervisorProfile/SupervisorProfile.json');
+// 榮譽董事長
+export const getChairman = () => triwraRequest.get('/Chairman/Chairman.json');
 // 研究一所~四所  1~4
 export const getResearchInstitute = (x:string) => {
  return triwraRequest.get(`/DepartmentIntroduction/${x}.json`);

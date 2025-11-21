@@ -15,6 +15,17 @@ const router = createRouter({
       }
     },
     {
+      path: '/ChairmanView/',
+      name: 'ChairmanView',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/ChairmanView.vue'),
+      meta: {
+        title: '榮譽董事長' 
+      }
+    },
+    {
       path: '/SupervisorProfile/',
       name: 'SupervisorProfile',
       // route level code-splitting
